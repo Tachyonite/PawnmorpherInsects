@@ -1,0 +1,14 @@
+﻿<Manifest>
+	<identifier>Pawnmorpher Insects</identifier>
+	<version>0.1</version>
+	<dependencies>
+		<li>erdelf.humanoidalienraces</li>
+		<li>unlimitedhugs.hugslib</li>
+		<li>tachyonite.pawnmorpher</li>
+	</dependencies>
+	<incompatibleWith>
+		<li>killface.facialstuff</li>
+		<li>changedresser.kv.rw</li>
+		<li>edb.preparecarefully</li>
+	</incompatibleWith>
+</Manifest>
