@@ -784,6 +784,9 @@
         <member name="M:Pawnmorph.Aspects.SapienceHit.PostAdd">
             <summary> Called after this instance is added to the pawn. </summary>
         </member>
+        <member name="M:Pawnmorph.Aspects.SapienceHit.PostInit">
+            <summary> Called after the base instance is initialize. </summary>
+        </member>
         <member name="T:Pawnmorph.Aspects.SkillBasedGiver">
             <summary>
              aspect giver that only gives an aspect when a skill is above a certain threshold 
@@ -837,6 +840,15 @@
             get all configuration errors with this giver 
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:Pawnmorph.Aspects.SplitMind">
+            <summary>
+            aspect for the giving merged pawns a 'split mind'
+            </summary>
+            <seealso cref="T:Pawnmorph.Aspect" />
+        </member>
+        <member name="M:Pawnmorph.Aspects.SplitMind.PostTick">
+            <summary> Called every tick. </summary>
         </member>
         <member name="T:Pawnmorph.AspectTracker">
             <summary> Thing comp for tracking 'mutation aspects'. </summary>
@@ -1059,6 +1071,14 @@
             <param name="pawn">The pawn.</param>
             <param name="partDefs">The part defs.</param>
             <returns></returns>
+        </member>
+        <member name="M:Pawnmorph.BodyUtilities.GetAllNonMissingParts(Verse.Pawn)">
+            <summary>
+            Gets all non missing parts on this pawn
+            </summary>
+            <param name="pawn">The pawn.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">pawn</exception>
         </member>
         <member name="M:Pawnmorph.BodyUtilities.GetAllNonMissingParts(Verse.Pawn,System.Collections.Generic.IReadOnlyList{Verse.BodyPartDef})">
             <summary>
@@ -1634,6 +1654,21 @@
             <summary>Chooses the hit part.</summary>
             <param name="dinfo">The dInfo.</param>
             <param name="pawn">The pawn.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Pawnmorph.DebugUtils.DBG_TrainingWorkGiver">
+            <summary>
+            debug class for the training work giver 
+            </summary>
+            <seealso cref="T:RimWorld.WorkGiver_Train" />
+        </member>
+        <member name="M:Pawnmorph.DebugUtils.DBG_TrainingWorkGiver.JobOnThing(Verse.Pawn,Verse.Thing,System.Boolean)">
+            <summary>
+            Jobs the on thing.
+            </summary>
+            <param name="pawn">The pawn.</param>
+            <param name="t">The t.</param>
+            <param name="forced">if set to <c>true</c> [forced].</param>
             <returns></returns>
         </member>
         <member name="M:Pawnmorph.DebugUtils.DebugLogUtils.HediffStageInfo.ToString">
@@ -2727,6 +2762,20 @@
                 the colony.
             </param>
         </member>
+        <member name="M:Pawnmorph.FormerHumanUtilities.GenerateRandomHumanForm(Verse.Pawn)">
+            <summary>
+            Generates the random human form of the given animal 
+            </summary>
+            <param name="animal">The animal.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Pawnmorph.FormerHumanUtilities.GenerateRandomUnmergedHuman(Verse.Pawn)">
+            <summary>
+            Generates the random unmerged humans for the given merged animal 
+            </summary>
+            <param name="mergedAnimal">The animal.</param>
+            <returns></returns>
+        </member>
         <member name="M:Pawnmorph.FormerHumanUtilities.MakePermanentlyFeral(Verse.Pawn)">
             <summary>
                 Makes the pawn permanently feral.
@@ -2923,6 +2972,14 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="P:Pawnmorph.Hediffs.Comp_MutationSeverityAdjust.ChangePerDay">
+            <summary>
+            Gets the change per day.
+            </summary>
+            <value>
+            The change per day.
+            </value>
+        </member>
         <member name="T:Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
             <summary>
                 comp properties for mutation adjust hediff comp
@@ -2948,6 +3005,18 @@
             this value is the value the attached hediff should reach if the pawn has had the mutation for an 'infinite' amount of time
             <param name="pawn">The pawn.</param>
             <returns></returns>
+        </member>
+        <member name="T:Pawnmorph.Hediffs.Comp_RestartMutationProgression">
+            <summary>
+            hediff comp that restarts 
+            </summary>
+            <seealso cref="T:Verse.HediffComp" />
+        </member>
+        <member name="M:Pawnmorph.Hediffs.Comp_RestartMutationProgression.CompPostPostAdd(System.Nullable{Verse.DamageInfo})">
+            <summary>
+            Comps the post post add.
+            </summary>
+            <param name="dinfo">The dinfo.</param>
         </member>
         <member name="T:Pawnmorph.Hediffs.Comp_TFStageConfigChecker">
             <summary>
@@ -3112,6 +3181,14 @@
               <c>true</c> if this instance should be removed; otherwise, <c>false</c>.
             </value>
         </member>
+        <member name="P:Pawnmorph.Hediffs.MorphTf.MutationStatValue">
+            <summary>
+            Gets the mutation stat value.
+            </summary>
+            <value>
+            The mutation stat value.
+            </value>
+        </member>
         <member name="P:Pawnmorph.Hediffs.MorphTf.MeanMutationsPerDay">
             <summary>
             the expected number of mutations to happen in a single day 
@@ -3124,6 +3201,11 @@
         <member name="M:Pawnmorph.Hediffs.MorphTf.PostAdd(System.Nullable{Verse.DamageInfo})">
             <summary>called after this hediff is added to the pawn</summary>
             <param name="dinfo">The dinfo.</param>
+        </member>
+        <member name="M:Pawnmorph.Hediffs.MorphTf.ResetMutationCaches">
+            <summary>
+            Resets the mutation caches.
+            </summary>
         </member>
         <member name="M:Pawnmorph.Hediffs.MorphTf.Tick">
             <summary>Ticks this instance.</summary>
@@ -3181,11 +3263,12 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Pawnmorph.Hediffs.MorphTransformationStage.GetEntries(Verse.Pawn)">
+        <member name="M:Pawnmorph.Hediffs.MorphTransformationStage.GetEntries(Verse.Pawn,Verse.Hediff)">
             <summary>
             Gets the entries for the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
+            <param name="source"></param>
             <returns></returns>
         </member>
         <member name="P:Pawnmorph.Hediffs.MorphTransformationStage.Entries">
@@ -3341,6 +3424,15 @@
                 if true, the mutation will be block from any part, not just on the same part this mutation is on
             </summary>
         </member>
+        <member name="M:Pawnmorph.Hediffs.MutationDef.BlockEntry.Blocks(Pawnmorph.Hediff_AddedMutation,Pawnmorph.Hediffs.MutationDef,Verse.BodyPartRecord)">
+            <summary>
+            Checks if the given source mutation blocks the given otherMutation being added at the given part
+            </summary>
+            <param name="sourceMutation">The source mutation.</param>
+            <param name="otherMutation">The other mutation.</param>
+            <param name="addPart">The add part.</param>
+            <returns></returns>
+        </member>
         <member name="T:Pawnmorph.Hediffs.MutationEntry">
             <summary>
             simple POD that stores information about a mutation entry 
@@ -3393,9 +3485,45 @@
             memory to add when this stage is entered 
             </summary>
         </member>
+        <member name="F:Pawnmorph.Hediffs.MutationStage.skipAspects">
+            <summary>
+            The skip aspects
+            </summary>
+        </member>
+        <member name="P:Pawnmorph.Hediffs.MutationStage.SkipAspects">
+            <summary>
+            Gets the skip aspects.
+            </summary>
+            <value>
+            The skip aspects.
+            </value>
+        </member>
         <member name="M:Pawnmorph.Hediffs.MutationStage.EnteredStage(Verse.Hediff)">
             <summary>called when the given hediff enters this stage</summary>
             <param name="hediff">The hediff.</param>
+        </member>
+        <member name="T:Pawnmorph.Hediffs.MutationStage.AspectEntry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.Hediffs.MutationStage.AspectEntry.aspect">
+            <summary>
+            The aspect the pawn must have 
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.Hediffs.MutationStage.AspectEntry.stage">
+            <summary>
+            The stage the aspect must be in to satisfy this entry, if null any stage will do 
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.Hediffs.MutationStage.AspectEntry.Satisfied(Verse.Pawn)">
+            <summary>
+            checks if the given pawn satisfies this entry 
+            </summary>
+            <param name="pawn">The pawn.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">pawn</exception>
         </member>
         <member name="T:Pawnmorph.Hediffs.Giver_MutationCategoryGiver">
             <summary>
@@ -3511,6 +3639,14 @@
         <member name="M:Pawnmorph.Hediffs.FormerHuman.PostTick">
             <summary>called after the pawn's tick method.</summary>
         </member>
+        <member name="P:Pawnmorph.Hediffs.FormerHuman.ShouldRemove">
+            <summary>
+            Gets a value indicating whether this instance should be removed.
+            </summary>
+            <value>
+              <c>true</c> if this instance should be removed; otherwise, <c>false</c>.
+            </value>
+        </member>
         <member name="T:Pawnmorph.Hediffs.RandomMorphFullTfStage">
             <summary>
             transformation stage that picks a random morph to turn the pawn into
@@ -3571,11 +3707,12 @@
             how fast the mutation types change 
             </summary>
         </member>
-        <member name="M:Pawnmorph.Hediffs.RandomMorphTransformationStage.GetEntries(Verse.Pawn)">
+        <member name="M:Pawnmorph.Hediffs.RandomMorphTransformationStage.GetEntries(Verse.Pawn,Verse.Hediff)">
             <summary>
             Gets the entries for the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
+            <param name="source"></param>
             <returns></returns>
         </member>
         <member name="T:Pawnmorph.Hediffs.SimpleDescriptiveHediff">
@@ -3601,10 +3738,70 @@
             The label base.
             </value>
         </member>
+        <member name="T:Pawnmorph.Hediffs.SyringeRifleTf">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:Verse.Hediff" />
+        </member>
+        <member name="P:Pawnmorph.Hediffs.SyringeRifleTf.ShouldRemove">
+            <summary>
+            Gets a value indicating whether this instance should be removed.
+            </summary>
+            <value>
+              <c>true</c> if this instance should be removed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Pawnmorph.Hediffs.SyringeRifleTf.Initialize(Verse.Thing)">
+            <summary>
+            Initializes this instance with the given weapon
+            </summary>
+            <param name="weapon">The weapon.</param>
+        </member>
+        <member name="M:Pawnmorph.Hediffs.SyringeRifleTf.OnStageChanged(Verse.HediffStage)">
+            <summary>
+                Called when the stage changes.
+            </summary>
+            <param name="currentStage">The last stage.</param>
+        </member>
+        <member name="P:Pawnmorph.Hediffs.SyringeRifleTf.ChosenKind">
+            <summary>
+            Gets the kind of the chosen.
+            </summary>
+            <value>
+            The kind of the chosen.
+            </value>
+        </member>
+        <member name="M:Pawnmorph.Hediffs.SyringeRifleTf.ExposeData">
+            <summary>
+            Exposes the data.
+            </summary>
+        </member>
+        <member name="T:Pawnmorph.Hediffs.SyringeTfStage">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:Pawnmorph.Hediffs.TransformationStageBase" />
+        </member>
+        <member name="M:Pawnmorph.Hediffs.SyringeTfStage.GetEntries(Verse.Pawn,Verse.Hediff)">
+            <summary>
+            Gets the entries for the given pawn
+            </summary>
+            <param name="pawn">The pawn.</param>
+            <returns></returns>
+        </member>
         <member name="T:Pawnmorph.Hediffs.TransformationBase">
             <summary>abstract base class for all transformation hediffs</summary>
             <seealso cref="T:Pawnmorph.IDescriptiveHediff" />
             <seealso cref="T:Verse.Hediff" />
+        </member>
+        <member name="P:Pawnmorph.Hediffs.TransformationBase.BlocksRaceCheck">
+            <summary>
+            Gets a value indicating whether this transformation hediff blocks the race checking 
+            </summary>
+            <value>
+              <c>true</c> if this transformation hediff blocks the race checking; otherwise, <c>false</c>.
+            </value>
         </member>
         <member name="M:Pawnmorph.Hediffs.TransformationBase.DebugString">
             <summary>
@@ -3748,11 +3945,12 @@
         <member name="F:Pawnmorph.Hediffs.TransformationStage.mutations">
             <summary>The mutations that this stage can add</summary>
         </member>
-        <member name="M:Pawnmorph.Hediffs.TransformationStage.GetEntries(Verse.Pawn)">
+        <member name="M:Pawnmorph.Hediffs.TransformationStage.GetEntries(Verse.Pawn,Verse.Hediff)">
             <summary>
             Gets the entries for the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
+            <param name="source"></param>
             <returns></returns>
         </member>
         <member name="T:Pawnmorph.Hediffs.TransformationStageBase">
@@ -3763,11 +3961,12 @@
             <seealso cref="T:Pawnmorph.Hediffs.IDescriptiveStage" />
             <seealso cref="T:Pawnmorph.Hediffs.IExecutableStage" />
         </member>
-        <member name="M:Pawnmorph.Hediffs.TransformationStageBase.GetEntries(Verse.Pawn)">
+        <member name="M:Pawnmorph.Hediffs.TransformationStageBase.GetEntries(Verse.Pawn,Verse.Hediff)">
             <summary>
             Gets the entries for the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
+            <param name="source"></param>
             <returns></returns>
         </member>
         <member name="M:Pawnmorph.Hediffs.TransformationStageBase.ConfigErrors">
@@ -4506,6 +4705,19 @@
             a collection of utilities around changing a pawn's race 
             </summary>
         </member>
+        <member name="M:Pawnmorph.Hybrids.RaceShiftUtilities.CompPropComparer.Equals(Verse.CompProperties,Verse.CompProperties)">
+            <summary>Determines whether the specified objects are equal.</summary>
+            <param name="x">The first object of type <paramref name="T" /> to compare.</param>
+            <param name="y">The second object of type <paramref name="T" /> to compare.</param>
+            <returns>
+            <see langword="true" /> if the specified objects are equal; otherwise, <see langword="false" />.</returns>
+        </member>
+        <member name="M:Pawnmorph.Hybrids.RaceShiftUtilities.CompPropComparer.GetHashCode(Verse.CompProperties)">
+            <summary>Returns a hash code for the specified object.</summary>
+            <param name="obj">The <see cref="T:System.Object" /> for which a hash code is to be returned.</param>
+            <returns>A hash code for the specified object.</returns>
+            <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
+        </member>
         <member name="F:Pawnmorph.Hybrids.RaceShiftUtilities.RACE_CHANGE_MESSAGE_ID">
             <summary>
             The race change message identifier (used in the keyed translation file)
@@ -4722,6 +4934,26 @@
             </summary>
             <param name="pawn">The pawn.</param>
             <param name="ingested">The ingested.</param>
+        </member>
+        <member name="T:Pawnmorph.IPMThingComp">
+            <summary>
+            interface for thing comps so they can receive messages when they are being added/remove dynamically by hybrid race changes  
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.IPMThingComp.PreRemove">
+            <summary>
+            called just before a comp is about to be removed from the pawn 
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.IPMThingComp.PostRemove">
+            <summary>
+            called just after a comp is removed from the pawn
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.IPMThingComp.Init">
+            <summary>
+            Initializes this instance after being added during a race change
+            </summary>
         </member>
         <member name="T:Pawnmorph.IWorkModifier">
             <summary>
@@ -5000,6 +5232,30 @@
             </summary>
             <param name="pawn"></param>
             <returns></returns>
+        </member>
+        <member name="T:Pawnmorph.MergedPawnUtilities">
+            <summary>
+                static class containing merged pawn related utilities
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.MergedPawnUtilities.TransferAspects(System.Collections.Generic.IEnumerable{Verse.Pawn},Verse.Pawn)">
+            <summary>
+                Transfers the aspects to the given meld.
+            </summary>
+            <param name="originalPawns">The original pawns.</param>
+            <param name="mergedPawn">The merged pawn.</param>
+        </member>
+        <member name="M:Pawnmorph.MergedPawnUtilities.TransferToMergedPawn(System.Collections.Generic.IReadOnlyList{Verse.Pawn},Verse.Pawn)">
+            <summary>
+            Transfers traits, aspects, and relationships to a merged pawn.
+            </summary>
+            <param name="originals">The originals.</param>
+            <param name="mergedPawn">The merged pawn.</param>
+            <exception cref="T:System.ArgumentNullException">
+            originals
+            or
+            mergedPawn
+            </exception>
         </member>
         <member name="T:Pawnmorph.ModInitializationException">
             <summary>
@@ -5569,6 +5825,67 @@
             <param name="pawn">The pawn.</param>
             <returns></returns>
         </member>
+        <member name="T:Pawnmorph.MutationSite">
+            <summary>
+            readonly struct describing the 'slot' or 'site' a mutation can occupy 
+            </summary>
+            <seealso cref="T:Pawnmorph.MutationSite" />
+        </member>
+        <member name="M:Pawnmorph.MutationSite.#ctor(Verse.BodyPartRecord,Pawnmorph.Hediffs.MutationLayer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Pawnmorph.MutationSite"/> struct.
+            </summary>
+            <param name="record">The record.</param>
+            <param name="layer">The layer.</param>
+        </member>
+        <member name="M:Pawnmorph.MutationSite.ToString">
+            <summary>Returns the fully qualified type name of this instance.</summary>
+            <returns>The fully qualified type name.</returns>
+        </member>
+        <member name="P:Pawnmorph.MutationSite.Record">
+            <summary>
+            Gets the body part record of this site
+            </summary>
+            <value>
+            The record.
+            </value>
+        </member>
+        <member name="P:Pawnmorph.MutationSite.Layer">
+            <summary>
+            Gets the layer of this site
+            </summary>
+            <value>
+            The layer.
+            </value>
+        </member>
+        <member name="M:Pawnmorph.MutationSite.Equals(Pawnmorph.MutationSite)">
+            <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        </member>
+        <member name="M:Pawnmorph.MutationSite.Equals(System.Object)">
+            <summary>Indicates whether this instance and a specified object are equal.</summary>
+            <param name="obj">The object to compare with the current instance. </param>
+            <returns>
+            <see langword="true" /> if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, <see langword="false" />. </returns>
+        </member>
+        <member name="M:Pawnmorph.MutationSite.GetHashCode">
+            <summary>Returns the hash code for this instance.</summary>
+            <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        </member>
+        <member name="M:Pawnmorph.MutationSite.op_Equality(Pawnmorph.MutationSite,Pawnmorph.MutationSite)">
+            <summary>Returns a value that indicates whether the values of two <see cref="T:Pawnmorph.MutationSite" /> objects are equal.</summary>
+            <param name="left">The first value to compare.</param>
+            <param name="right">The second value to compare.</param>
+            <returns>true if the <paramref name="left" /> and <paramref name="right" /> parameters have the same value; otherwise, false.</returns>
+        </member>
+        <member name="M:Pawnmorph.MutationSite.op_Inequality(Pawnmorph.MutationSite,Pawnmorph.MutationSite)">
+            <summary>Returns a value that indicates whether two <see cref="T:Pawnmorph.MutationSite" /> objects have different values.</summary>
+            <param name="left">The first value to compare.</param>
+            <param name="right">The second value to compare.</param>
+            <returns>true if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, false.</returns>
+        </member>
         <member name="T:Pawnmorph.Need_Control">
             <summary>
                 need that represents a sapient animal's control or humanity left
@@ -5617,7 +5934,7 @@
                 The seeker level.
             </value>
         </member>
-        <member name="M:Pawnmorph.Need_Control.AddInstinctChange(System.Int32)">
+        <member name="M:Pawnmorph.Need_Control.AddInstinctChange(System.Single)">
             <summary>
                 Adds the instinct change to this need
             </summary>
@@ -5657,6 +5974,14 @@
             <summary>
                 Notifies that the cached maximum level is dirty
             </summary>
+        </member>
+        <member name="P:Pawnmorph.Need_Control.Limit">
+            <summary>
+            Gets the upper limit of this pawns sapience
+            </summary>
+            <value>
+            The limit.
+            </value>
         </member>
         <member name="M:Pawnmorph.Need_Control.SetInitialLevel">
             <summary>
@@ -5806,31 +6131,58 @@
         </member>
         <member name="T:Pawnmorph.PawnTransferUtilities">
             <summary>
-            static container for functions that transfer stuff between pawns 
+                static container for functions that transfer stuff between pawns
             </summary>
         </member>
-        <member name="M:Pawnmorph.PawnTransferUtilities.TransferRelations(Verse.Pawn,Verse.Pawn,System.Predicate{RimWorld.PawnRelationDef})">
+        <member name="T:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode">
             <summary>
-            Transfers the relations from pawn1 to pawn2 
+                the method to use when transferring skill passions
             </summary>
-            <param name="pawn1">The original.</param>
-            <param name="pawn2">The animal.</param>
-            <param name="predicate">optional predicate to dictate which relations get transferred</param>
         </member>
-        <member name="M:Pawnmorph.PawnTransferUtilities.TransferTraits(Verse.Pawn,Verse.Pawn,System.Func{RimWorld.TraitDef,System.Boolean})">
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Ignore">
+            do not transfer passions
+        </member>
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Min">
             <summary>
-            move all mutation related traits from the original pawn to the transformed pawn if they are sapient
+                take the minimum of the passions
             </summary>
-            <param name="originalPawn">The original pawn.</param>
-            <param name="transformedPawn">The transformed pawn.</param>
-            <param name="selector">The selector function for determining if a trait should be transferred</param>
-            <exception cref="T:System.ArgumentNullException">
-            transformedPawn
-            or
-            selector
-            or
-            originalPawn
-            </exception>
+        </member>
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Max">
+            <summary>
+                take the maximum of the passions
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Set">
+            <summary>
+                just set the passion level
+            </summary>
+        </member>
+        <member name="T:Pawnmorph.PawnTransferUtilities.SkillTransferMode">
+            <summary>
+                enum for the different modes of transferring skills
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillTransferMode.Set">
+            <summary>
+                The target skill's level should be set to exactly that of the source skill
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillTransferMode.Min">
+            <summary>
+                target skill's level should be the min of the original and that of the source skill
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.PawnTransferUtilities.SkillTransferMode.Max">
+            <summary>
+                target skill's level should be the max of the original and that of the source skill
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.PawnTransferUtilities.MergeSkills(System.Collections.Generic.IEnumerable{Verse.Pawn},Verse.Pawn)">
+            <summary>
+                Merges the skills from the given original pawns into the given meld
+            </summary>
+            <param name="originals">The originals.</param>
+            <param name="meld">The meld.</param>
         </member>
         <member name="M:Pawnmorph.PawnTransferUtilities.TransferAspects(Verse.Pawn,Verse.Pawn)">
             <summary>
@@ -5839,69 +6191,70 @@
             <param name="pawn1">The source pawn.</param>
             <param name="pawn2">The destination pawn.</param>
         </member>
+        <member name="M:Pawnmorph.PawnTransferUtilities.TransferFavor(Verse.Pawn,Verse.Pawn)">
+            <summary>
+                Transfers the favor of all factions from pawn1 to pawn2
+            </summary>
+            <param name="pawn1">The pawn1.</param>
+            <param name="pawn2">The pawn2.</param>
+            <exception cref="T:System.ArgumentNullException">
+                pawn1
+                or
+                pawn2
+            </exception>
+        </member>
+        <member name="M:Pawnmorph.PawnTransferUtilities.TransferRelations(Verse.Pawn,Verse.Pawn,System.Predicate{RimWorld.PawnRelationDef})">
+            <summary>
+                Transfers the relations from pawn1 to pawn2
+            </summary>
+            <param name="pawn1">The original.</param>
+            <param name="pawn2">The animal.</param>
+            <param name="predicate">optional predicate to dictate which relations get transferred</param>
+        </member>
+        <member name="M:Pawnmorph.PawnTransferUtilities.TransferRelations(Verse.Pawn,Verse.Pawn,System.Predicate{RimWorld.DirectPawnRelation})">
+            <summary>
+                Transfers the relations from pawn1 to pawn2
+            </summary>
+            <param name="pawn1">The original.</param>
+            <param name="pawn2">The animal.</param>
+            <param name="predicate">optional predicate to dictate which relations get transferred</param>
+        </member>
+        <member name="M:Pawnmorph.PawnTransferUtilities.TransferRelations(System.Collections.Generic.IReadOnlyList{Verse.Pawn},Verse.Pawn,System.Func{RimWorld.PawnRelationDef,System.Boolean})">
+            <summary>
+                Transfers the relations from the original pawns to the given meld
+            </summary>
+            <param name="originals">The originals.</param>
+            <param name="meld">The meld.</param>
+            <param name="filter">The filter.</param>
+            <exception cref="T:System.ArgumentNullException">
+                originals
+                or
+                meld
+            </exception>
+        </member>
         <member name="M:Pawnmorph.PawnTransferUtilities.TransferSkills(Verse.Pawn,Verse.Pawn,Pawnmorph.PawnTransferUtilities.SkillTransferMode,Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode)">
             <summary>
-            Transfers skills from pawn1 to pawn2
+                Transfers skills from pawn1 to pawn2
             </summary>
             <param name="pawn1">The pawn1.</param>
             <param name="pawn2">The pawn2.</param>
             <param name="mode">The transfer mode.</param>
             <param name="passionTransferMode">The passion transfer mode.</param>
         </member>
-        <member name="M:Pawnmorph.PawnTransferUtilities.TransferFavor(Verse.Pawn,Verse.Pawn)">
+        <member name="M:Pawnmorph.PawnTransferUtilities.TransferTraits(Verse.Pawn,Verse.Pawn,System.Func{RimWorld.TraitDef,System.Boolean})">
             <summary>
-            Transfers the favor of all factions from pawn1 to pawn2 
+                move all mutation related traits from the original pawn to the transformed pawn if they are sapient
             </summary>
-            <param name="pawn1">The pawn1.</param>
-            <param name="pawn2">The pawn2.</param>
+            <param name="originalPawn">The original pawn.</param>
+            <param name="transformedPawn">The transformed pawn.</param>
+            <param name="selector">The selector function for determining if a trait should be transferred</param>
             <exception cref="T:System.ArgumentNullException">
-            pawn1
-            or
-            pawn2
+                transformedPawn
+                or
+                selector
+                or
+                originalPawn
             </exception>
-        </member>
-        <member name="T:Pawnmorph.PawnTransferUtilities.SkillTransferMode">
-            <summary>
-            enum for the different modes of transferring skills 
-            </summary>
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillTransferMode.Set">
-            <summary>
-            The target skill's level should be set to exactly that of the source skill 
-            </summary>
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillTransferMode.Min">
-            <summary>
-            target skill's level should be the min of the original and that of the source skill 
-            </summary>
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillTransferMode.Max">
-            <summary>
-            target skill's level should be the max of the original and that of the source skill 
-            </summary>
-        </member>
-        <member name="T:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode">
-            <summary>
-            the method to use when transferring skill passions 
-            </summary>
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Ignore">
-            do not transfer passions
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Min">
-            <summary>
-            take the minimum of the passions 
-            </summary>
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Max">
-            <summary>
-            take the maximum of the passions 
-            </summary>
-        </member>
-        <member name="F:Pawnmorph.PawnTransferUtilities.SkillPassionTransferMode.Set">
-            <summary>
-            just set the passion level 
-            </summary>
         </member>
         <member name="F:Pawnmorph.PMDamageDefOf.MutagenCloud">
             <summary>
@@ -6084,6 +6437,11 @@
                 stat that influences the amount of control a sapient animal has before going feral
             </summary>
         </member>
+        <member name="F:Pawnmorph.PMStatDefOf.MutationHaltChance">
+            <summary>
+                stat that determines how likely pawns will stop adapting to mutations
+            </summary>
+        </member>
         <member name="F:Pawnmorph.PMStatDefOf.MutagenSensitivity">
             <summary>
                 Multiplier on the impact of mutagenic buildup on this creature.
@@ -6209,6 +6567,14 @@
             The pawn.
             </value>
         </member>
+        <member name="P:Pawnmorph.SapienceState.IsFormerHuman">
+            <summary>
+            Gets a value indicating whether this state makes the pawn count as a 'former human'.
+            </summary>
+            <value>
+              <c>true</c> if this state makes the pawn count as a 'former human'; otherwise, <c>false</c>.
+            </value>
+        </member>
         <member name="M:Pawnmorph.SapienceState.AddOrRemoveDynamicComponents">
             <summary>
             Adds the or remove dynamic components.
@@ -6317,6 +6683,14 @@
             </summary>
             <seealso cref="T:Pawnmorph.SapienceState" />
         </member>
+        <member name="P:Pawnmorph.SapienceStates.Animalistic.IsFormerHuman">
+            <summary>
+            Gets a value indicating whether this state makes the pawn count as a 'former human'.
+            </summary>
+            <value>
+              <c>true</c> if this state makes the pawn count as a 'former human'; otherwise, <c>false</c>.
+            </value>
+        </member>
         <member name="P:Pawnmorph.SapienceStates.Animalistic.CurrentIntelligence">
             <summary>
                 Gets the current intelligence.
@@ -6340,6 +6714,16 @@
             Adds the or remove dynamic components.
             </summary>
         </member>
+        <member name="M:Pawnmorph.SapienceStates.Animalistic.Enter">
+            <summary>
+                called when a pawn enters this sapience state
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.SapienceStates.Animalistic.Exit">
+            <summary>
+            called when the pawn exits this state 
+            </summary>
+        </member>
         <member name="M:Pawnmorph.SapienceStates.Animalistic.Init">
             <summary>
                 Initializes this instance.
@@ -6351,6 +6735,14 @@
             sapience state for former humans 
             </summary>
             <seealso cref="T:Pawnmorph.SapienceState" />
+        </member>
+        <member name="P:Pawnmorph.SapienceStates.FormerHuman.IsFormerHuman">
+            <summary>
+            Gets a value indicating whether this state makes the pawn count as a 'former human'.
+            </summary>
+            <value>
+              <c>true</c> if this state makes the pawn count as a 'former human'; otherwise, <c>false</c>.
+            </value>
         </member>
         <member name="M:Pawnmorph.SapienceStates.FormerHuman.Tick">
             <summary>
@@ -6381,6 +6773,18 @@
             </summary>
         </member>
         <member name="M:Pawnmorph.SapienceStates.FormerHuman.Init">
+            <summary>
+                Initializes this instance.
+            </summary>
+            this is always called before enter and after loading a pawn
+        </member>
+        <member name="T:Pawnmorph.SapienceStates.MergedPawn">
+            <summary>
+            sapience stat for a merged pawn 
+            </summary>
+            <seealso cref="T:Pawnmorph.SapienceStates.FormerHuman" />
+        </member>
+        <member name="M:Pawnmorph.SapienceStates.MergedPawn.Init">
             <summary>
                 Initializes this instance.
             </summary>
@@ -6769,6 +7173,90 @@
             <param name="thingDef">The thing definition.</param>
             <returns></returns>
         </member>
+        <member name="T:Pawnmorph.ThingComps.AlwaysMergedPawn">
+            <summary>
+            thing comp to make the attached pawn always a 'merged' pawn
+            </summary>
+            <seealso cref="T:Verse.ThingComp" />
+        </member>
+        <member name="M:Pawnmorph.ThingComps.AlwaysMergedPawn.CompTick">
+            <summary>
+            called every tick 
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.ThingComps.AlwaysMergedPawn.PostSpawnSetup(System.Boolean)">
+            <summary>
+            Posts the spawn setup.
+            </summary>
+            <param name="respawningAfterLoad">if set to <c>true</c> [respawning after load].</param>
+        </member>
+        <member name="M:Pawnmorph.ThingComps.AlwaysMergedPawn.PostExposeData">
+            <summary>
+            called to save all data in this comp 
+            </summary>
+        </member>
+        <member name="T:Pawnmorph.ThingComps.AnimalSelectorComp">
+            <summary>
+            </summary>
+            <seealso cref="T:Verse.ThingComp" />
+        </member>
+        <member name="P:Pawnmorph.ThingComps.AnimalSelectorComp.Props">
+            <summary>
+                Gets the props.
+            </summary>
+            <value>
+                The props.
+            </value>
+        </member>
+        <member name="P:Pawnmorph.ThingComps.AnimalSelectorComp.ChosenKind">
+            <summary>
+            Gets the kind of the chosen.
+            </summary>
+            <value>
+            The kind of the chosen.
+            </value>
+        </member>
+        <member name="P:Pawnmorph.ThingComps.AnimalSelectorComp.AllAnimalsSelectable">
+            <summary>
+            Gets all animals selectable.
+            </summary>
+            <value>
+            All animals selectable.
+            </value>
+        </member>
+        <member name="M:Pawnmorph.ThingComps.AnimalSelectorComp.PostExposeData">
+            <summary>
+                Posts the expose data.
+            </summary>
+        </member>
+        <member name="T:Pawnmorph.ThingComps.AnimalSelectorCompProperties">
+            <summary>
+            </summary>
+            <seealso cref="T:Verse.CompProperties" />
+        </member>
+        <member name="F:Pawnmorph.ThingComps.AnimalSelectorCompProperties.requiresTag">
+            <summary>
+                if an animal must be tagged by the tagging rifle
+            </summary>
+        </member>
+        <member name="F:Pawnmorph.ThingComps.AnimalSelectorCompProperties.raceFilter">
+            <summary>
+                The race filter
+            </summary>
+        </member>
+        <member name="M:Pawnmorph.ThingComps.AnimalSelectorCompProperties.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Pawnmorph.ThingComps.AnimalSelectorCompProperties" /> class.
+            </summary>
+        </member>
+        <member name="P:Pawnmorph.ThingComps.AnimalSelectorCompProperties.AllAnimals">
+            <summary>
+                Gets all animals that can be selected
+            </summary>
+            <value>
+                All animals.
+            </value>
+        </member>
         <member name="T:Pawnmorph.ThingComps.SapienceTracker">
             <summary>
                 thing comp to track the 'former human' status of a pawn
@@ -6782,6 +7270,11 @@
             <value>
             Gets the current sapience state that pawn is in 
             </value>
+        </member>
+        <member name="M:Pawnmorph.ThingComps.SapienceTracker.ExitState">
+            <summary>
+            Exits the current sapience state.
+            </summary>
         </member>
         <member name="M:Pawnmorph.ThingComps.SapienceTracker.CompTick">
             <summary>
@@ -7513,6 +8006,14 @@
                 For example, a Wargmorph's race should be Warg.
             </summary>
         </member>
+        <member name="F:Pawnmorph.MorphDef.associatedAnimals">
+            <summary>
+            The associated animals
+            </summary>
+            these are a list of animals that are associated with this morph but who don't influence the hybrid race
+            transformation targets 
+            setting this is useful for getting mutations for animals that don't have morphs yet
+        </member>
         <member name="P:Pawnmorph.MorphDef.ExplicitHybridRace">
             <summary>
             Gets the explicit hybrid race.
@@ -7693,6 +8194,19 @@
         <member name="F:Pawnmorph.MorphGroupDef._associatedMorphs">
             <summary> A list of all morph types that are of this group. </summary>
         </member>
+        <member name="P:Pawnmorph.MorphGroupDef.AnimalRaces">
+            <summary>
+            Gets the animal races in this morph group
+            </summary>
+            <value>
+            The animal races.
+            </value>
+        </member>
+        <member name="F:Pawnmorph.MorphGroupDef.animalRaces">
+            <summary>
+            The animal races that count toward this group 
+            </summary>
+        </member>
         <member name="F:Pawnmorph.MorphGroupDef.hediff">
             hediff to give to morphs in this group,
         </member>
@@ -7808,6 +8322,11 @@
         <member name="T:Pawnmorph.MorphTrackingComp">
             <summary> Component for tracking the morph related updates of a single pawn. </summary>
         </member>
+        <member name="F:Pawnmorph.MorphTrackingComp.needsRaceCompCheck">
+            <summary>
+            flag to check if the pawn needs to have their comps check for any comps added or removed by a race change
+            </summary>
+        </member>
         <member name="M:Pawnmorph.MorphTrackingComp.Initialize(Verse.CompProperties)">
             <summary>Initializes this instance with the specified properties.</summary>
             <param name="props">The properties.</param>
@@ -7815,6 +8334,11 @@
         <member name="M:Pawnmorph.MorphTrackingComp.PostSpawnSetup(System.Boolean)">
             <summary>called during post spawn setup</summary>
             <param name="respawningAfterLoad">if set to <c>true</c> [respawning after load].</param>
+        </member>
+        <member name="M:Pawnmorph.MorphTrackingComp.CompTick">
+            <summary>
+            called every tick
+            </summary>
         </member>
         <member name="M:Pawnmorph.MorphTrackingComp.NotifyRaceChanged(Pawnmorph.MorphDef)">
             <summary> Notify that the parent has changed races. </summary>
@@ -7907,6 +8431,16 @@
         <member name="P:Pawnmorph.MorphUtilities.AllMorphs">
             <summary>Gets all morphs.</summary>
             <value>All morphs.</value>
+        </member>
+        <member name="M:Pawnmorph.MorphUtilities.TryGetBestMorphOfAnimal(Verse.ThingDef)">
+            <summary>
+            Tries the get best morph of the specified animal.
+            </summary>
+            tries to get the best morph def of the given animal, checking first for a morph who's
+            race is the given race then checks morph's associated animals 
+            <param name="race">The race.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">race</exception>
         </member>
         <member name="M:Pawnmorph.MorphUtilities.GetAssociatedMorph(Verse.HediffDef)">
             <summary> Gets all morphDefs associated with the given transformation. </summary>
@@ -8367,6 +8901,12 @@
                 called every tick
             </summary>
         </member>
+        <member name="M:Pawnmorph.MutationTracker.CheckPawnRace">
+            <summary>
+            Checks if the pawn's race should change .
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Pawnmorph.MutationTracker.GetDirectNormalizedInfluence(Pawnmorph.AnimalClassBase)">
             <summary>
                 Gets the normalized direct influence of the given morph
@@ -8500,20 +9040,19 @@
             </returns>
             <exception cref="T:System.ArgumentNullException">hediff</exception>
         </member>
-        <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,System.Int32,System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects})">
+        <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,System.Int32,System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects},System.Boolean)">
             <summary>
-                Adds the mutation to the given pawn
+            Adds the mutation to the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
             <param name="mutation">The mutation.</param>
             <param name="countToAdd">The count to add.</param>
             <param name="ancillaryEffects">The ancillary effects.</param>
+            <param name="force">if set to <c>true</c> the mutation will be added regardless if it is valid for the given pawn.</param>
             <returns></returns>
-            <exception cref="T:System.ArgumentNullException">
-                pawn
-                or
-                mutation
-            </exception>
+            <exception cref="T:System.ArgumentNullException">pawn
+            or
+            mutation</exception>
         </member>
         <member name="M:Pawnmorph.MutationUtilities.GetAllNonMissingWithoutProsthetics(Verse.HediffSet)">
             <summary>
@@ -8523,21 +9062,20 @@
             <returns></returns>
             <exception cref="T:System.ArgumentNullException">hSet</exception>
         </member>
-        <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,System.Collections.Generic.List{Verse.BodyPartDef},System.Int32,System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects})">
+        <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,System.Collections.Generic.List{Verse.BodyPartDef},System.Int32,System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects},System.Boolean)">
             <summary>
-                Adds the mutation to the given pawn
+            Adds the mutation to the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
             <param name="mutation">The mutation.</param>
             <param name="parts">The parts.</param>
             <param name="countToAdd">The count to add.</param>
             <param name="ancillaryEffects">The ancillary effects.</param>
+            <param name="force">if set to <c>true</c> the mutation will be added regardless if it is valid for the given pawn.</param>
             <returns></returns>
-            <exception cref="T:System.ArgumentNullException">
-                pawn
-                or
-                mutation
-            </exception>
+            <exception cref="T:System.ArgumentNullException">pawn
+            or
+            mutation</exception>
         </member>
         <member name="M:Pawnmorph.MutationUtilities.ResumeAdjustment(Verse.Hediff)">
             <summary>
@@ -8547,21 +9085,21 @@
             or the process is complete 
             <param name="hediff">The hediff.</param>
         </member>
-        <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,System.Collections.Generic.IEnumerable{Verse.BodyPartRecord},System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects})">
+        <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,System.Collections.Generic.IEnumerable{Verse.BodyPartRecord},System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects},System.Boolean)">
             <summary>
-                Adds the mutation to the given pawn
+            Adds the mutation to the given pawn
             </summary>
             <param name="pawn">The pawn.</param>
             <param name="mutation">The mutation.</param>
             <param name="records">The records to add mutations to</param>
             <param name="ancillaryEffects">The ancillary effects.</param>
-            <exception cref="T:System.ArgumentNullException">
-                pawn
-                or
-                mutation
-                or
-                records
-            </exception>
+            <param name="force">if set to <c>true</c> the mutation is added regardless if the mutation is valid for the given pawn.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">pawn
+            or
+            mutation
+            or
+            records</exception>
         </member>
         <member name="M:Pawnmorph.MutationUtilities.AddMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef,Verse.BodyPartRecord,System.Nullable{Pawnmorph.MutationUtilities.AncillaryMutationEffects})">
             <summary>
@@ -8708,6 +9246,37 @@
             mutationDef
             or
             pawn
+            </exception>
+        </member>
+        <member name="M:Pawnmorph.MutationUtilities.CanApplyMutations(Pawnmorph.Hediffs.MutationDef,Verse.Pawn,Verse.BodyPartRecord,Pawnmorph.MutagenDef)">
+            <summary>
+            Determines whether this instance can be applied to the specified pawn
+            </summary>
+            <param name="mutationDef">The mutation definition.</param>
+            <param name="pawn">The pawn.</param>
+            <param name="addPart">The add part.</param>
+            <param name="mutagen">The mutagen.</param>
+            <returns>
+              <c>true</c> if this instance can be applied to the specified pawn; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">mutationDef
+            or
+            pawn</exception>
+        </member>
+        <member name="M:Pawnmorph.MutationUtilities.BlocksMutation(Pawnmorph.Hediff_AddedMutation,Pawnmorph.Hediffs.MutationDef,Verse.BodyPartRecord)">
+            <summary>
+            checks if this mutation blocks the addition of the other mutation at the given site 
+            </summary>
+            <param name="mutation">The mutation.</param>
+            <param name="otherMutation">The other mutation.</param>
+            <param name="addPart">The add part.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">
+            mutation
+            or
+            otherMutation
+            or
+            addPart
             </exception>
         </member>
         <member name="M:Pawnmorph.MutationUtilities.HasMutation(Verse.Pawn,Pawnmorph.Hediffs.MutationDef)">
@@ -9123,21 +9692,21 @@
                 comp for ensuring the parent always spawns with the former human hediff
             </summary>
         </member>
-        <member name="M:Pawnmorph.CompAlwaysFormerHuman.PostSpawnSetup(System.Boolean)">
-            <summary>
-            called after the parent thing is spawned 
-            </summary>
-            <param name="respawningAfterLoad">if set to <c>true</c> [respawning after load].</param>
-        </member>
         <member name="M:Pawnmorph.CompAlwaysFormerHuman.CompTick">
             <summary>
-            called every tick 
+                called every tick
             </summary>
         </member>
         <member name="M:Pawnmorph.CompAlwaysFormerHuman.PostExposeData">
             <summary>
                 Posts the expose data.
             </summary>
+        </member>
+        <member name="M:Pawnmorph.CompAlwaysFormerHuman.PostSpawnSetup(System.Boolean)">
+            <summary>
+                called after the parent thing is spawned
+            </summary>
+            <param name="respawningAfterLoad">if set to <c>true</c> [respawning after load].</param>
         </member>
         <member name="M:Pawnmorph.CompAlwaysFormerHuman.OnRecoveredFromMentalState(Verse.AI.MentalState)">
             <summary>
@@ -9535,6 +10104,14 @@
             hediff representing a mutation 
             </summary>
             <seealso cref="T:Verse.HediffWithComps" />
+        </member>
+        <member name="P:Pawnmorph.Hediff_AddedMutation.Def">
+            <summary>
+            Gets the definition.
+            </summary>
+            <value>
+            The definition.
+            </value>
         </member>
         <member name="M:Pawnmorph.Hediff_AddedMutation.Blocks(Pawnmorph.Hediffs.MutationDef,Verse.BodyPartRecord)">
             <summary>
@@ -10544,6 +11121,19 @@
             </summary>
             <seealso cref="T:Verse.ThingDef" />
         </member>
+        <member name="T:Pawnmorph.ThinkNodes.ConditionalAnimalisticColonist">
+            <summary>
+                conditional think node for animalistic pawns in the player faction
+            </summary>
+            <seealso cref="T:Verse.AI.ThinkNode_Conditional" />
+        </member>
+        <member name="M:Pawnmorph.ThinkNodes.ConditionalAnimalisticColonist.Satisfied(Verse.Pawn)">
+            <summary>
+                checks if the specified pawn is valid for this node.
+            </summary>
+            <param name="pawn">The pawn.</param>
+            <returns></returns>
+        </member>
         <member name="T:Pawnmorph.ThinkNodes.ConditionalOfFormerHuman">
             <summary>
             think node that restricts things to former humans 
@@ -11031,6 +11621,19 @@
             <summary> Check to make sure that the pawn's traits allow for the thought to be active. </summary>
             <returns> If traits allow the thought can be active. </returns>
         </member>
+        <member name="T:Pawnmorph.Thoughts.Worker_MergedPawn">
+            <summary>
+            thought worker for merged pawns 
+            </summary>
+            <seealso cref="T:RimWorld.ThoughtWorker" />
+        </member>
+        <member name="M:Pawnmorph.Thoughts.Worker_MergedPawn.CurrentStateInternal(Verse.Pawn)">
+            <summary>
+            gets the current state of this thought for the given pawn
+            </summary>
+            <param name="p">The p.</param>
+            <returns></returns>
+        </member>
         <member name="T:Pawnmorph.Thoughts.Worker_MorphFrustrated">
             <summary>
             thought worker for the 'morph' frustrated thought
@@ -11107,6 +11710,18 @@
         </member>
         <member name="T:Pawnmorph.TransformerUtility">
             A class full of useful methods.
+        </member>
+        <member name="M:Pawnmorph.TransformerUtility.ScaleInjuriesToNewRace(Verse.Pawn,Verse.ThingDef)">
+            <summary>
+            Scales all injuries on the current pawn to a new race with a different base health scale 
+            </summary>
+            <param name="pawn">The pawn.</param>
+            <param name="newRace">The new race.</param>
+            <exception cref="T:System.ArgumentNullException">
+            pawn
+            or
+            newRace
+            </exception>
         </member>
         <member name="P:Pawnmorph.TransformerUtility.AllMorphTfs">
             <summary>
@@ -11432,6 +12047,11 @@
             types
             </exception>
         </member>
+        <member name="P:Pawnmorph.Utilities.PatchUtilities.RimworldIsAnimalMethod">
+            <summary>
+            gets <see cref="P:Verse.RaceProperties.Animal"/> getter method
+            </summary>
+        </member>
         <member name="P:Pawnmorph.Utilities.PatchUtilities.IsAnimalMethod">
             <summary>
             Gets method info for <see cref="M:Pawnmorph.FormerHumanUtilities.IsAnimal(Verse.Pawn)"/>
@@ -11454,6 +12074,14 @@
             </summary>
             <value>
             The is tool user method.
+            </value>
+        </member>
+        <member name="P:Pawnmorph.Utilities.PatchUtilities.GetRacePropsMethod">
+            <summary>
+            Gets the get race props method.
+            </summary>
+            <value>
+            The get race props method.
             </value>
         </member>
         <member name="M:Pawnmorph.Utilities.PatchUtilities.SubstituteFormerHumanMethods(System.Collections.Generic.IList{HarmonyLib.CodeInstruction})">
