@@ -1,0 +1,8 @@
+<Defs>
+    <Pawnmorph.MorphGroupDef>
+		<defName>PMI_HiveMinded</defName>
+		<label>hive</label>
+		<aspectDef>PMI_HiveMinded</aspectDef>
+	</Pawnmorph.MorphGroupDef>
+	
+</Defs>
