@@ -5,19 +5,19 @@
         <stages>
             <li>
                 <modifier>alone</modifier>
-				<description>TODO</description>
+				<description>There are no other insectoids for this pawn to connect with.</description>
             </li>
             <li>
                 <modifier>lonely</modifier>
-				<description>TODO</description>
+				<description>There aren't quite enough insectoids for this pawn to be happy.</description>
             </li>
             <li>
                 <modifier>comfortable</modifier>
-				<description>TODO</description>
+				<description>The hive grows.</description>
             </li>
             <li>
                 <modifier>happy</modifier>
-				<description>TODO</description>
+				<description>The hive is swarming, thrumming, beating, alive.</description>
             </li>
         </stages>
     </Pawnmorph.AspectDef>

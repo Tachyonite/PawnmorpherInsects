@@ -6,23 +6,23 @@
             <!-- should have the same number of stages as the aspect -->
             <li>
                 <label>alone</label>
-                <description>TODO</description>
+                <description>I feel totally isolated from others.</description>
                 <baseMoodEffect>-2</baseMoodEffect>
             </li>
             <li>
                 <label>lonely</label>
-                <description>TODO</description>
+                <description>There's not enough like me for a true group.</description>
                 <baseMoodEffect>-1</baseMoodEffect>
             </li>
             <li>
                 <label>comfortable</label>
-                <description>TODO</description>
+                <description>There's enough like me to keep my happy.</description>
                 <visible>true</visible>
                 <baseMoodEffect>1</baseMoodEffect>
             </li>
             <li>
                 <label>happy</label>
-                <description>TODO</description>
+                <description>The hive is swarming.</description>
                 <baseMoodEffect>5</baseMoodEffect>
             </li>
         </stages>
