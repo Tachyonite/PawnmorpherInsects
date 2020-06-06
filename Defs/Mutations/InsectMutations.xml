@@ -1,0 +1,130 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/MutationDef.xsd">
+    <Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart" Name="PMI_ChitianMutation">
+        <defName>PMI_ChitinSkin</defName>
+        <label>chitainous skin</label>
+        <description>TODO</description>
+        <classInfluence>Insects</classInfluence>
+        <comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.33</severityPerDay>
+			</li>
+        </comps>
+        <stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+				<minSeverity>0</minSeverity>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+                <labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+                <labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+                <minSeverity>0.4</minSeverity>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+				<minSeverity>0.6</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
+		<defName>PMI_InsectClaws</defName>
+		<label>insect claws</label>
+		<parts>
+			<li>Hand</li>
+		</parts>
+		<description>TODO</description>
+		<stages>
+			<li>
+				<label>new</label>
+			</li>
+			<li>
+				<label>adapted</label>
+				<minSeverity>1</minSeverity>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
+		<defName>PMI_InsectClawsFoot</defName>
+		<label>insect claws</label>
+		<parts>
+			<li>Foot</li>
+		</parts>
+		<description>TODO</description>
+		<stages>
+			<li>
+				<label>new</label>
+			</li>
+			<li>
+				<label>adapted</label>
+				<minSeverity>1</minSeverity>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
+		<defName>PMI_InsectMandibles</defName>
+		<label>insect mandibles</label>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<description>TODO</description>
+		<stages>
+			<li>
+				<label>new</label>
+			</li>
+			<li>
+				<label>adapted</label>
+				<minSeverity>1</minSeverity>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
+		<defName>PMI_InsectAbdomen</defName>
+		<label>insect abdomen</label>
+		<parts>
+			<li>Tail</li>
+		</parts>
+		<description>TODO</description>
+		<stages>
+			<li>
+				<label>new</label>
+			</li>
+			<li>
+				<label>adapted</label>
+				<minSeverity>1</minSeverity>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
+		<defName>PMI_CompoundEye</defName>
+		<label>insect eye</label>
+		<parts>
+			<li>Eye</li>
+		</parts>
+		<description>TODO</description>
+		<stages>
+			<li>
+				<label>new</label>
+			</li>
+			<li>
+				<label>adapted</label>
+				<minSeverity>1</minSeverity>
+			</li>
+		</stages>
+	</Pawnmorph.Hediffs.MutationDef>
+
+
+</Defs>
