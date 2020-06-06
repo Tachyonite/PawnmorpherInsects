@@ -1,0 +1,39 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/MutationDef.xsd">
+    <Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart" Name="PMI_ChitianMutation">
+        <defName>PMI_ChitinSkin</defName>
+        <label>chitainous skin</label>
+        <description>TODO</description>
+        <classInfluence>Insects</classInfluence>
+        <comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.33</severityPerDay>
+			</li>
+        </comps>
+        <stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+				<minSeverity>0</minSeverity>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+                <labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+                <labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+                <minSeverity>0.4</minSeverity>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<labelOverride>TODO</labelOverride>
+				<description>TODO</description>
+				<minSeverity>0.6</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+			</li>
+		</stages>
+    </Pawnmorph.Hediffs.MutationDef>
+
+</Defs>
