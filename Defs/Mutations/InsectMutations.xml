@@ -3,7 +3,7 @@
         <defName>PMI_ChitinSkin</defName>
         <label>chitainous skin</label>
         <description>TODO</description>
-        <classInfluence>Insects</classInfluence>
+        <classInfluence>Insect</classInfluence>
         <comps>
 			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
 				<severityPerDay>0.33</severityPerDay>

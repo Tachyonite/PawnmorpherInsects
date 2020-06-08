@@ -1,6 +1,6 @@
 <Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/MutationDef.xsd">
     <Pawnmorph.Hediffs.MutationDef Name="PMI_InsectMutationBase" ParentName="PawnmorphPart" Abstract="true">
-        <classInfluence>Insects</classInfluence>
+        <classInfluence>Insect</classInfluence>
     </Pawnmorph.Hediffs.MutationDef>
 
 </Defs>
