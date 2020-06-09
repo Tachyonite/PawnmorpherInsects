@@ -3,7 +3,7 @@
         <defName>PMI_ChitinSkin</defName>
         <label>chitinous skin</label>
         <description>Tough fibers have spread through this skin, weaving together into a hard shell.</description>
-        <classInfluence>Insects</classInfluence>
+        <classInfluence>Insect</classInfluence>
         <comps>
 			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
 				<severityPerDay>0.33</severityPerDay>
