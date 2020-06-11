@@ -1,0 +1,38 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+    <Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
+        <defName>PMI_DiggerClaws</defName>
+        <label>digger mandables</label>
+        <description>TODO</description>
+        <classInfluence>PMI_GigawigMorph</classInfluence>
+        <parts>
+            <li>Jaw</li>
+        </parts>
+        <stages>
+            <li>
+                <label>new</label>
+            </li>
+            <li>
+                <minSeverity>1</minSeverity>
+                <label>adapted</label>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>head claw</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>6</power>
+                        <cooldownTime>2.6</cooldownTime>
+                        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+                    </li>
+                </tools>
+            </li>
+            <li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+                <severityPerDay>0.25</severityPerDay>
+            </li>
+        </comps>
+    </Pawnmorph.Hediffs.MutationDef>
+</Defs>
