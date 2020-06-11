@@ -20,13 +20,12 @@
             <li Class="HediffCompProperties_VerbGiver">
                 <tools>
                     <li>
-                        <label>venom-fangs</label>
+                        <label>venom-stinger</label>
                         <capacities>
                             <li>ToxicBite</li>
                         </capacities>
                         <power>12</power>
                         <cooldownTime>2</cooldownTime>
-                        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
                         <surpriseAttack>
                             <extraMeleeDamages>
                                 <li>
@@ -37,13 +36,12 @@
                         </surpriseAttack>
                     </li>
                     <li>
-                        <label>muta-fangs</label>
+                        <label>muta-stinger</label>
                         <capacities>
                             <li>MutagenicStab</li>
                         </capacities>
                         <power>12</power>
                         <cooldownTime>2</cooldownTime>
-                        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
                         <surpriseAttack>
                             <extraMeleeDamages>
                                 <li>

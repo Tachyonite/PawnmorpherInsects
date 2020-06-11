@@ -1,11 +1,11 @@
 <Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
     <Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
-        <defName>PMI_SerratedMandibles</defName>
-        <label>serrated mandibles</label>
+        <defName>PMI_SerratedClaws</defName>
+        <label>serrated claws</label>
         <description>TODO</description>
         <classInfluence>PMI_MegaSpiderMorph</classInfluence>
         <parts>
-            <li>Jaw</li>
+            <li>Hand</li>
         </parts>
         <stages>
             <li>
@@ -20,7 +20,7 @@
             <li Class="HediffCompProperties_VerbGiver">
                 <tools>
                     <li>
-                        <label>head claw</label>
+                        <label>serrated claw</label>
                         <capacities>
                             <li>Cut</li>
                         </capacities>
