@@ -1,0 +1,10 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+    <Pawnmorph.MorphDef ParentName="PMI_ProductionInsectBase">
+        <defName>PMI_SpiderweaverMorph</defName>
+        <race>VFEI_VatGrownSpiderweaver</race>
+        <label>spiderweaver morph</label>
+        <description>TODO</description>
+        <fullTransformation>PMI_SpiderWeaverMorphTf</fullTransformation>
+        <partialTransformation>PMI_SpiderWeaverMorphTfPartial</partialTransformation>
+    </Pawnmorph.MorphDef>
+</Defs>
