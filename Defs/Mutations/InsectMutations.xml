@@ -103,6 +103,32 @@
 	</Pawnmorph.Hediffs.MutationDef>
 
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
+		<defName>PMI_InsectAntenna</defName>
+		<label>antenna</label>
+		<parts>
+			<li>Ear</li>
+		</parts>
+		<description>TODO</description>
+		<stages>
+			<li>
+				<label>unfamiliar</label>
+			
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				
+			</li>
+		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
 		<defName>PMI_InsectClawsFoot</defName>
 		<label>chitinous claws</label>
 		<parts>
