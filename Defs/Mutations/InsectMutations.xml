@@ -158,67 +158,7 @@
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
 
-	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
-		<defName>PMI_InsectMandibles</defName>
-		<label>insectoid mandibles</label>
-		<parts>
-			<li>Jaw</li>
-		</parts>
-		<description>Big bug chompers! Helps bite stuff, do ant things like carry a big piece of a leaf along a stick, but not so great for conversation. Unless [PAWN_nameDef] communicates through biting.</description>
-		<stages>
-			<li>
-				<label>unfamiliar</label>
-				<capMods>
-					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.50</offset>
-					</li>
-					<li>
-						<capacity>Eating</capacity>
-						<offset>0.10</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<label>adapted</label>
-				<capMods>
-					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.10</offset>
-					</li>
-					<li>
-						<capacity>Eating</capacity>
-						<offset>0.30</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
-			</li>
-		</stages>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<capacities>
-							<li>Bite</li>
-						</capacities>
-						<power>10</power>
-						<cooldownTime>1.5</cooldownTime>
-						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-						<chanceFactor>0.7</chanceFactor>
-					</li>
-				</tools>
-			</li>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.25</severityPerDay>
-			</li>
-		</comps>
-	</Pawnmorph.Hediffs.MutationDef>
+
 
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
 		<defName>PMI_InsectAbdomen</defName>
@@ -238,28 +178,5 @@
 			</li>
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
-
-	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase"> 
-		<defName>PMI_CompoundEye</defName>
-		<label>compound eye</label>
-		<parts>
-			<li>Eye</li>
-		</parts>
-		<description>Countless individual photoreceptors make up these eyes. They offer a vast, albeit overwhelming, field of view. Also great in staring contests.</description>
-		<stages>
-			<li>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
-				<capMods>
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.2</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</Pawnmorph.Hediffs.MutationDef>
-
 
 </Defs>
