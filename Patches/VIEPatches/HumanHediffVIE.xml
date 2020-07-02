@@ -3,7 +3,7 @@
 		<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
 		<value>
 
-<li>
+			<li>
 				<!-- Male Muzzles -->
 				<path>Parts/None/None</path>
 				<bodyPart>Jaw</bodyPart>

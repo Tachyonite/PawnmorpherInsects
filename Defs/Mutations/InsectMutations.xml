@@ -37,7 +37,7 @@
 				</statOffsets>
 			</li>
 			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<labelOverride>thick chitin</labelOverride>
+				<labelOverride>carapace</labelOverride>
 				<description>The chitin here has hardened into a strong protective carapace.</description>
 				<minSeverity>0.8</minSeverity>
 				<statOffsets>
@@ -108,7 +108,7 @@
 		<parts>
 			<li>Foot</li>
 		</parts>
-		<description>Not quite the bee's knees, this is the bug's foot. Great for dancing the jitterbug, at least when [PAWN_nameDef] gets used to it. The sharp claws wreak havoc on footwear, but give great traction for running.</description>
+		<description>Not quite the bee's knees, this is the bug's foot. Great for dancing the jitterbug, at least when they get used to it. The sharp claws wreak havoc on footwear, but give great traction for running.</description>
 		<stages>
 			<li>
 				<label>unfamiliar</label>
