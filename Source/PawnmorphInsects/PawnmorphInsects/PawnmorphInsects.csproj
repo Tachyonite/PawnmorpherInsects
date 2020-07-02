@@ -145,7 +145,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hediffs\RoyalJellyWithdraw.cs" />
     <Compile Include="InsectsInit.cs" />
     <Compile Include="PatchOperations\MakeMutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

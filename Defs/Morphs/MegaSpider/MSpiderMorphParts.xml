@@ -35,41 +35,4 @@
             </li>
         </comps>
     </Pawnmorph.Hediffs.MutationDef>
-
-    <Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
-        <defName>PMI_SerratedMandibles</defName>
-        <label>serrated mandibles</label>
-        <description>TODO</description>
-        <classInfluence>PMI_MegaSpiderMorph</classInfluence>
-        <parts>
-            <li>Jaw</li>
-        </parts>
-        <stages>
-            <li>
-                <label>new</label>
-            </li>
-            <li>
-                <minSeverity>1</minSeverity>
-                <label>adapted</label>
-            </li>
-        </stages>
-        <comps>
-            <li Class="HediffCompProperties_VerbGiver">
-                <tools>
-                    <li>
-                        <label>serrated claw</label>
-                        <capacities>
-                            <li>Cut</li>
-                        </capacities>
-                        <power>12</power>
-                        <cooldownTime>2.6</cooldownTime>
-                        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
-                    </li>
-                </tools>
-            </li>
-            <li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-                <severityPerDay>0.25</severityPerDay>
-            </li>
-        </comps>
-    </Pawnmorph.Hediffs.MutationDef>
 </Defs>
