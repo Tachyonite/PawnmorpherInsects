@@ -17,6 +17,11 @@
             <displayName>Pawnmorpher</displayName>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1786466855</steamWorkshopUrl>
         </li>
+        <li>
+            <packageId>OskarPotocki.VFE.Insectoid</packageId>
+            <displayName>Vanilla Factions Expanded - Insectoids</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2149755445</steamWorkshopUrl>
+        </li>
     </modDependencies>
     <loadBefore>
     </loadBefore>
@@ -24,5 +29,6 @@
         <li>erdelf.HumanoidAlienRaces</li>
         <li>PeteTimesSix.CompactHediffs</li>
         <li>tachyonite.pawnmorpher</li>
+        <li>OskarPotocki.VFE.Insectoid</li>
     </loadAfter>
 </ModMetaData>
