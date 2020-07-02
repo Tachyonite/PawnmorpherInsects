@@ -37,6 +37,15 @@
                     </parts>
                 </value>
             </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_Antenna"]</xpath>
+                <parentName>PMI_InsectMutationBase</parentName>
+                <value>
+                    <parts>
+                        <li>Ear</li>
+                    </parts>
+                </value>
+            </li>
             <!-- 
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_JellySac"]</xpath>
