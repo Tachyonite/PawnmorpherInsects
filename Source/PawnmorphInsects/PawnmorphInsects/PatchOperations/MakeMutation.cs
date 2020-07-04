@@ -12,7 +12,7 @@ namespace PawnmorphInsects.PatchOperations
     {
         private XmlContainer value;
 
-        private static readonly string NodeName = typeof(MutationDef).Name;
+        private static readonly string NodeName = typeof(MutationDef).FullName;
         private string parentName = "PawnmorphPart"; 
         protected override bool ApplyWorker(XmlDocument xml)
         {
