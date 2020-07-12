@@ -47,7 +47,7 @@
                     </parts>
                 </value>
             </li>
-            
+
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_PneumaticClaw"]</xpath>
                 <parentName>PMI_InsectMutationBase</parentName>
@@ -60,8 +60,8 @@
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_VenomGland"]</xpath>
                 <parentName>PMI_InsectMutationBase</parentName>
-                <classInfluence>PMI_GigaScorpionMorph</classInfluence>
                 <value>
+                    <classInfluence>PMI_GigaScorpionMorph</classInfluence>
                     <parts>
                         <li>Neck</li>
                     </parts>
