@@ -1,0 +1,10 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+    <Pawnmorph.MorphDef ParentName="PMI_ProductionInsectBase">
+        <defName>PMI_RoyalMaggotMorph</defName>
+        <label>royal maggot morph</label>
+        <description>TODO</description>
+        <race>Megaspider</race>
+        <fullTransformation>PMI_RoyalMaggotMorphTf</fullTransformation>
+        <partialTransformation>PMI_RoyalMaggotMorphTfPartial</partialTransformation>
+    </Pawnmorph.MorphDef>
+</Defs>

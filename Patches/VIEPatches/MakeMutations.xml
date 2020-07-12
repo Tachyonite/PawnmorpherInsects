@@ -37,11 +37,11 @@
                     </parts>
                 </value>
             </li>
-            <!-- 
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_JellySac"]</xpath>
                 <parentName>PMI_InsectMutationBase</parentName>
                 <value>
+                    <classInfluence>PMI_RoyalMaggotMorph</classInfluence>
                     <parts>
                         <li>Eye</li>
                     </parts>
@@ -56,7 +56,7 @@
                         <li>Hand</li>
                     </parts>
                 </value>
-            </li> -->
+            </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_VenomGland"]</xpath>
                 <parentName>PMI_InsectMutationBase</parentName>
@@ -67,7 +67,7 @@
                     </parts>
                 </value>
             </li>
-           
+
         </operations>
     </Operation>
 </Patch>
