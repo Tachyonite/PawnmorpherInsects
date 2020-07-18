@@ -69,7 +69,7 @@
     <HediffDef ParentName="NewPartialAspectedMorphParent">
 		<defName>PMI_GigawigMorphTfPartial</defName>
 		<label>gigawig partial</label>
-		<description>TODO</description>
+		<description>This person has mechanites in their blood that are giving them insectoid mutations.</description>
 		<stages>
 			<li Class="Pawnmorph.Hediffs.MorphTransformationStage">
 				<painOffset>0.1</painOffset>

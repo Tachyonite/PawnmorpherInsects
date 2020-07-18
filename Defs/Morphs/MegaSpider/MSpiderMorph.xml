@@ -2,7 +2,7 @@
     <Pawnmorph.MorphDef ParentName="PMI_CombatInsectBase">
         <defName>PMI_MegaSpiderMorph</defName>
         <label>megaspider morph</label>
-        <description>TODO</description>
+        <description>Megaspiders are feared across known space, and the humanoid morphs of them are no exception. Combining the ferocity in combat of the megaspider with the relative intellect of a human, these morphs are often very dangerous.</description>
         <race>Megaspider</race>
         <fullTransformation>PMI_MegaSpiderMorphTf</fullTransformation>
         <partialTransformation>PMI_MegaSpiderMorphTfPartial</partialTransformation>
