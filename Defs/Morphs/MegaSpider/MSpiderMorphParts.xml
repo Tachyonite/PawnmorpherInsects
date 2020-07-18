@@ -2,7 +2,7 @@
     <Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
         <defName>PMI_SerratedClaws</defName>
         <label>serrated claws</label>
-        <description>TODO</description>
+        <description>These claws are serrated and built to slice apart prey. While less useful on a human, they are still an effective combat mutation.</description>
         <classInfluence>PMI_MegaSpiderMorph</classInfluence>
         <parts>
             <li>Hand</li>

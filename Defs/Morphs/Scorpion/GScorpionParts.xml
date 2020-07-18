@@ -3,7 +3,7 @@
         <defName>PMI_ScorpionTail</defName>
         <label>scorpion tail</label>
         <classInfluence>PMI_GigaScorpionMorph</classInfluence>
-        <description>TODO</description>
+        <description>A segmented tail with a barb on the end, perfect for stabbing and poisoning those whom it punctures. Due to the origin, this part also includes a strong dose of mutagen.</description>
         <parts>
             <li>Tail</li>
         </parts>

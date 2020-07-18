@@ -3,7 +3,7 @@
 		<defName>PMI_RoyalMaggotMorphTf</defName>
 		<hediffClass>Pawnmorph.Hediffs.MorphTf</hediffClass>
 		<label>royal maggot morph</label>
-		<description>TODO</description>
+		<description>This person has mechanites in their blood that are slowly mutating them into a royal maggot. Ew. Keep an eye on them, as leaving the mechanites unattended could lead to them becoming far more insectoid than human.</description>
 		<stages>
 			<li Class="Pawnmorph.Hediffs.FullTransformationStage">
 				<label>reeling</label>
@@ -67,7 +67,7 @@
     <HediffDef ParentName="NewPartialAspectedMorphParent">
 		<defName>PMI_RoyalMaggotMorphTfPartial</defName>
 		<label>royal maggot morph partial</label>
-		<description>TODO</description>
+		<description>This person has mechanites in their blood that are giving them insectoid mutations.</description>
 		<stages>
 			<li Class="Pawnmorph.Hediffs.MorphTransformationStage">
 				<painOffset>0.1</painOffset>

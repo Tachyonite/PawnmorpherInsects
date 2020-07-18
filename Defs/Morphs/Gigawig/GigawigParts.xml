@@ -2,7 +2,7 @@
     <Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
         <defName>PMI_DiggerClaws</defName>
         <label>digger claws</label>
-        <description>TODO</description>
+        <description>These claws are fierce and forged from laminate chitin, which can dig at solid rock with no ill effect on its bearer.</description>
         <classInfluence>PMI_GigawigMorph</classInfluence>
         <parts>
             <li>Hand</li>

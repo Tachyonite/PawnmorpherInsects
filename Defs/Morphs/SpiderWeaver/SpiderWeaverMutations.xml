@@ -1,8 +1,8 @@
 <Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
     <Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
         <defName>PMI_Spinnerets</defName>
-        <label>spinnerets</label>
-        <description>TODO</description>
+        <label>spinnerettes</label>
+        <description>This pawn now possesses the ability to spin silk from these very spiderlike organs.</description>
         <parts>
             <li>Tail</li>
         </parts>
