@@ -9,6 +9,7 @@
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Jaw"]/hediffGraphics</xpath>
 					<value>
 						<VFEI_Mandibles>Parts/Insect/Insect_Jaw</VFEI_Mandibles>
+						<PMI_InsectMandibles>Parts/Insect/Insect_Jaw</PMI_InsectMandibles>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -53,6 +54,7 @@
 							<drawForFemale>false</drawForFemale>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
+								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Left</PMI_CompoundEye>
 							</hediffGraphics>
 							<offsets>
 								<south>
@@ -96,6 +98,7 @@
 							<drawForFemale>false</drawForFemale>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
+								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Right</PMI_CompoundEye>
 							</hediffGraphics>
 							<offsets>
 								<south>
@@ -139,6 +142,7 @@
 							<drawForMale>false</drawForMale>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
+								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Left</PMI_CompoundEye>
 							</hediffGraphics>
 							<offsets>
 								<south>
@@ -185,6 +189,7 @@
 							<drawForMale>false</drawForMale>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
+								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Right</PMI_CompoundEye>
 							</hediffGraphics>
 							<offsets>
 								<south>
