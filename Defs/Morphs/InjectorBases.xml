@@ -1,0 +1,19 @@
+<Defs>
+    <ThingDef ParentName="InjectorBase" Name="PMI_DroneInjector" Abstract="True">
+        <costList>
+            <VFEI_DroneGenome>1</VFEI_DroneGenome>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="InjectorBase" Name="PMI_WarriorInjector" Abstract="True">
+        <costList>
+            <VFEI_WarriorGenome>1</VFEI_WarriorGenome>
+        </costList>
+    </ThingDef>
+
+    <ThingDef ParentName="InjectorBase" Name="PMI_RoyalInjector" Abstract="True">
+        <costList>
+            <VFEI_RoyalGenome>1</VFEI_RoyalGenome>
+        </costList>
+    </ThingDef>
+</Defs>

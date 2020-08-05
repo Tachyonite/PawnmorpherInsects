@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="PMI_RoyalInjector">
 		<defName>PMI_RoyalMaggotInjector</defName>
 		<label>mutasyringe, royal maggot</label>
 		<description>A mutagenic injector filled with mechanites and royal maggot DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>

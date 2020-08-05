@@ -1,5 +1,5 @@
 <Defs>
-	<ThingDef ParentName="InjectorBase">
+	<ThingDef ParentName="PMI_WarriorInjector">
 		<defName>PMI_GScorpionInjector</defName>
 		<label>mutasyringe, gigascorpion</label>
 		<description>A mutagenic injector filled with mechanites and gigascorpion DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
