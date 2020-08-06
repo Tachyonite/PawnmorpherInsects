@@ -3,7 +3,18 @@
         <defName>PMI_ChitinSkin</defName>
         <label>chitinous skin</label>
         <description>Tough fibers have spread through this skin, weaving together into a hard shell.</description>
-        <classInfluence>Insect</classInfluence>
+		<classInfluence>Insect</classInfluence>
+		<mutationMemory>PMI_ChitainMemory</mutationMemory>
+		<parts>
+			<li>Torso</li>
+			<li>Head</li>
+			<li>Ear</li>
+			<li>Arm</li>
+			<li>Hand</li>
+			<li>Leg</li>
+			<li>Foot</li>
+			<li>Tail</li>
+		</parts>
         <comps>
 			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
 				<severityPerDay>0.33</severityPerDay>

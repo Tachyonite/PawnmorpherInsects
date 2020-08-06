@@ -20,9 +20,20 @@
                 </value>
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_Antenna"]</xpath>
+                <parentName>PMI_InsectMutationBase</parentName>
+                <value>
+                    <mutationMemory>PMI_AntennaMemory</mutationMemory>
+                    <parts>
+                        <li>Ear</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_CompoundEye"]</xpath>
                 <parentName>PMI_InsectMutationBase</parentName>
                 <value>
+                    <mutationMemory>PMI_CompoundEyesMemory</mutationMemory>
                     <parts>
                         <li>Eye</li>
                     </parts>
