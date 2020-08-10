@@ -22,7 +22,7 @@
 					<li>Bite</li>
 				</capacities>
 				<power>15</power>
-				<cooldownTime>1</cooldownTime>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
 			</li>
@@ -32,7 +32,7 @@
 					<li>Scratch</li>
 				</capacities>
 				<power>17</power>
-				<cooldownTime>0.5</cooldownTime>
+				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
@@ -49,7 +49,7 @@
 					<li>PMI_MutagenicStingerStab</li>
 				</capacities>
 				<power>17</power>
-				<cooldownTime>0.5</cooldownTime>
+				<cooldownTime>1.0</cooldownTime>
 				<linkedBodyPartsGroup>PMI_TailStinger</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
