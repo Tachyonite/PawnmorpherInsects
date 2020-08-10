@@ -3,7 +3,7 @@
             <success>Always</success>
             <xpath>/Defs/HediffDef[defName="FullRandomTFAnyOutcome"]/stages/li/hediffGivers/li[@Class="Pawnmorph.HediffGiver_TF"]/pawnkinds</xpath>
             <value>
-                <li>PMI_ChaospiderBody</li>
+                <li>PMI_Chaospider</li>
             </value>
         </Operation>
 </Patch>
