@@ -37,7 +37,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Tail" and not(layerOffset="-0.29")]/hediffGraphics</xpath>
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and not(layerOffset="-0.29")]/hediffGraphics</xpath>
 					<value>
 						<PMI_InsectAbdomen>Parts/Insect/Insect_Abdomen</PMI_InsectAbdomen>
 						<PMI_Spinnerets>Parts/spiderweaver/spiderweaver_butt</PMI_Spinnerets>
