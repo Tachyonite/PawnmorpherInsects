@@ -32,7 +32,7 @@
 
 			<li Class="Pawnmorph.Hediffs.MutationStage">
 				<labelOverride>hardened skin</labelOverride>
-				<description>The skin here has hardened further as tough fibers weave together beneath</description>
+				<description>The skin here has hardened further as tough fibers weave together beneath.</description>
 				<minSeverity>0.4</minSeverity>
 				<statOffsets>
 					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
