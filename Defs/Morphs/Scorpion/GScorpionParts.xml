@@ -42,7 +42,7 @@
                             <li>MutagenicStab</li>
                         </capacities>
                         <power>12</power>
-                        <cooldownTime>2</cooldownTime>
+                        <cooldownTime>1.5</cooldownTime>
                         <surpriseAttack>
                             <extraMeleeDamages>
                                 <li>
