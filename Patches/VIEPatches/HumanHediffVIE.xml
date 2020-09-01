@@ -40,6 +40,13 @@
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and not(layerOffset="-0.29")]/hediffGraphics</xpath>
 					<value>
 						<PMI_InsectAbdomen>Parts/Insect/Insect_Abdomen</PMI_InsectAbdomen>
+					</value>
+
+				</li>
+				<li Class="PatchOperationAdd">
+					<!-- need a better way of doing these xml patches, hardcoding the floats is a bad idea -->
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and layerOffset="-0.29"]/hediffGraphics</xpath>
+					<value>
 						<PMI_Spinnerets>Parts/spiderweaver/spiderweaver_butt</PMI_Spinnerets>
 						<PMI_ScorpionTail>Parts/gigascorpion/gigascorpion_tail</PMI_ScorpionTail>
 					</value>
@@ -72,7 +79,7 @@
 										<Average_Pointy>(0,0.005)</Average_Pointy>
 									</crownTypes>
 								</south>
-								<north/>
+								<north />
 								<east>
 									<bodyTypes>
 										<Male>(-0.46,0.56)</Male>
@@ -116,7 +123,7 @@
 										<Average_Pointy>(0,0.005)</Average_Pointy>
 									</crownTypes>
 								</south>
-								<north/>
+								<north />
 								<east>
 									<bodyTypes>
 										<Male>(-0.46,0.56)</Male>
@@ -162,7 +169,7 @@
 										<Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
 									</crownTypes>
 								</south>
-								<north/>
+								<north />
 								<east>
 									<bodyTypes>
 										<Male>(-0.46,0.56)</Male>
@@ -209,7 +216,7 @@
 										<Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
 									</crownTypes>
 								</south>
-								<north/>
+								<north />
 								<east>
 									<bodyTypes>
 										<Male>(-0.46,0.56)</Male>
