@@ -6,5 +6,10 @@
         <race>Megaspider</race>
         <fullTransformation>PMI_MegaSpiderMorphTf</fullTransformation>
         <partialTransformation>PMI_MegaSpiderMorphTfPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(154,125,94)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
     </Pawnmorph.MorphDef>
 </Defs>

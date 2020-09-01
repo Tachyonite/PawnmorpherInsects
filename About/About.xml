@@ -1,11 +1,25 @@
 <ModMetaData>
     <name>Pawnmorpher Insects</name>
-    <author>Mic</author>
+    <author>Mic, Iron Wolf, The Pheonix</author>
     <supportedVersions>
         <li>1.1</li>
         <li>1.2</li>
     </supportedVersions>
-    <description>TODO</description>
+    <description>An addon for Pawnmorpher that adds graphics to VFEI insect mutations, and adds some new morphs with various new abilities! This mod will be expanded upon in the future with more types of insectmorph and various other features.
+	
+&lt;size=24&gt;Features&lt;/size&gt;
+
+- Graphics for most mutations 
+- VIE mutations now work with the morph system 
+- Several insect morphs with injectors
+ - megaspider 
+ - megascorpion 
+ - royal maggot
+ - gigawig 
+ - spiderweaver
+- Royal jelly withdrawl results in a 'former human' megaspider - capable of sapience and jobs.
+  
+	</description>
     <packageId>tachyonite.pawnmorpher.insects</packageId>
     <modDependencies>
         <li>
@@ -14,7 +28,7 @@
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
         </li>
         <li>
-            <packageId>tachyonite.pawnmorpher</packageId>
+            <packageId>tachyonite.pawnmorpherpublic</packageId>
             <displayName>Pawnmorpher</displayName>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1786466855</steamWorkshopUrl>
         </li>
@@ -29,7 +43,7 @@
     <loadAfter>
         <li>erdelf.HumanoidAlienRaces</li>
         <li>PeteTimesSix.CompactHediffs</li>
-        <li>tachyonite.pawnmorpher</li>
+        <li>tachyonite.pawnmorpherpublic</li>
         <li>OskarPotocki.VFE.Insectoid</li>
     </loadAfter>
 </ModMetaData>

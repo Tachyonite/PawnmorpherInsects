@@ -6,5 +6,10 @@
         <race>VFEI_VatGrownGigawig</race>
         <fullTransformation>PMI_GigawigMorphTf</fullTransformation>
         <partialTransformation>PMI_GigawigMorphTfPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(154,125,94)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
     </Pawnmorph.MorphDef>
 </Defs>
