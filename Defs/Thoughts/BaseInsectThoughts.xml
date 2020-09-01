@@ -9,12 +9,12 @@
 			</li>
 			<li>
 				<label>morphed</label>
-				<description>being a bug makes everything so new and exciting</description>
+				<description>Being a bug makes everything so new and exciting</description>
 				<baseMoodEffect>+3</baseMoodEffect>
 			</li>
 			<li>
 				<label>morphed</label>
-				<description>This is even worse then I thought I turned into a bug!</description>
+				<description>This is even worse then I thought...I turned into a bug!</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
@@ -25,17 +25,17 @@
 		<stages>
 			<li>
 				<label>reverted</label>
-				<description>back to normal!</description>
+				<description>Back to normal!</description>
 				<baseMoodEffect>3</baseMoodEffect>
 			</li>
 			<li>
 				<label>reverted</label>
-				<description>I was just getting used to it to.</description>
+				<description>I was just getting used to it too.</description>
 				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 			<li>
 				<label>reverted</label>
-				<description>I'm not a gross bug anymore!</description>
+				<description>Thank Randy, my bones are on the inside now, where they should be!</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 		</stages>
