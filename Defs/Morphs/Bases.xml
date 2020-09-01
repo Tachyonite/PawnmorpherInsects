@@ -2,6 +2,10 @@
     <Pawnmorph.MorphDef Name="PMI_InsectMorphBase" Abstract="true">
         <classification>Insect</classification>
         <group>PMI_HiveMinded</group>
+        <transformSettings>
+            <transformationMemory>PMI_BaseInsectChangedThought</transformationMemory>
+            <revertedMemory>PMI_BaseInsectRevertedThought</revertedMemory>
+        </transformSettings>
     </Pawnmorph.MorphDef>
 
     <Pawnmorph.MorphDef Name="PMI_CombatInsectBase" ParentName="PMI_InsectMorphBase" Abstract="true">
