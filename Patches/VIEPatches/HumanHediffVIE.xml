@@ -41,6 +41,7 @@
 					<value>
 						<PMI_InsectAbdomen>Parts/Insect/Insect_Abdomen</PMI_InsectAbdomen>
 						<PMI_Spinnerets>Parts/spiderweaver/spiderweaver_butt</PMI_Spinnerets>
+						<PMI_ScorpionTail>Parts/gigascorpion/gigascorpion_tail</PMI_ScorpionTail>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
