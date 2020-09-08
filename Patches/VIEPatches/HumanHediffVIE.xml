@@ -45,6 +45,7 @@
 				</li>
 				<li Class="PatchOperationAdd">
 					<!-- need a better way of doing these xml patches, hardcoding the floats is a bad idea -->
+					<!-- these tail offsets don't work either but look better then the other, so a good starting point? -->
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and layerOffset="-0.29"]/hediffGraphics</xpath>
 					<value>
 						<PMI_Spinnerets>Parts/spiderweaver/spiderweaver_butt</PMI_Spinnerets>

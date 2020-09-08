@@ -147,6 +147,7 @@
   <ItemGroup>
     <Compile Include="InsectsInit.cs" />
     <Compile Include="PatchOperations\MakeMutation.cs" />
+    <Compile Include="PMI_InsectJellyWithdraw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
