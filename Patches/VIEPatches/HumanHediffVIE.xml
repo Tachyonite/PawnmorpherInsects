@@ -39,16 +39,8 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and not(layerOffset="-0.29")]/hediffGraphics</xpath>
 					<value>
-						<PMI_InsectAbdomen>Parts/Insect/Insect_Abdomen</PMI_InsectAbdomen>
-					</value>
-
-				</li>
-				<li Class="PatchOperationAdd">
-					<!-- need a better way of doing these xml patches, hardcoding the floats is a bad idea -->
-					<!-- these tail offsets don't work either but look better then the other, so a good starting point? -->
-					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and layerOffset="-0.29"]/hediffGraphics</xpath>
-					<value>
 						<PMI_Spinnerets>Parts/spiderweaver/spiderweaver_butt</PMI_Spinnerets>
+						<PMI_InsectAbdomen>Parts/Insect/Insect_Abdomen</PMI_InsectAbdomen>
 						<PMI_ScorpionTail>Parts/gigascorpion/gigascorpion_tail</PMI_ScorpionTail>
 					</value>
 				</li>
@@ -56,12 +48,12 @@
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
 					<value>
 						<li>
-							<!-- Male Left Eye -->
+							<!-- Left Eye -->
 							<path>Parts/None/None</path>
 							<bodyPart>left eye</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
-							<drawForFemale>false</drawForFemale>
+							<shaderType>CutoutSkin</shaderType>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
 								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Left</PMI_CompoundEye>
@@ -75,12 +67,8 @@
 										<Hulk>(-0.42,0.56)</Hulk>
 										<Fat>(-0.42,0.56)</Fat>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Wide>(-0.01,0.005)</Average_Wide>
-										<Average_Pointy>(0,0.005)</Average_Pointy>
-									</crownTypes>
 								</south>
-								<north />
+								<north/>
 								<east>
 									<bodyTypes>
 										<Male>(-0.46,0.56)</Male>
@@ -89,23 +77,16 @@
 										<Hulk>(-0.52,0.56)</Hulk>
 										<Fat>(-0.51,0.56)</Fat>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Wide>(-0.01,0)</Average_Wide>
-										<Average_Pointy>(0.01,0)</Average_Pointy>
-										<Narrow_Normal>(0.07,-0.05)</Narrow_Normal>
-										<Narrow_Wide>(0.07,-0.05)</Narrow_Wide>
-										<Narrow_Pointy>(0.07,-0.06)</Narrow_Pointy>
-									</crownTypes>
 								</east>
 							</offsets>
 						</li>
 						<li>
-							<!-- Male Right Eye -->
+							<!-- Right Eye -->
 							<path>Parts/None/None</path>
 							<bodyPart>right eye</bodyPart>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
-							<drawForFemale>false</drawForFemale>
+							<shaderType>CutoutSkin</shaderType>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
 								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Right</PMI_CompoundEye>
@@ -119,12 +100,8 @@
 										<Hulk>(-0.42,0.56)</Hulk>
 										<Fat>(-0.42,0.56)</Fat>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Wide>(-0.01,0.005)</Average_Wide>
-										<Average_Pointy>(0,0.005)</Average_Pointy>
-									</crownTypes>
 								</south>
-								<north />
+								<north/>
 								<east>
 									<bodyTypes>
 										<Male>(-0.46,0.56)</Male>
@@ -133,107 +110,6 @@
 										<Hulk>(-0.52,0.56)</Hulk>
 										<Fat>(-0.51,0.56)</Fat>
 									</bodyTypes>
-									<crownTypes>
-										<Average_Wide>(-0.01,0)</Average_Wide>
-										<Average_Pointy>(0.01,0)</Average_Pointy>
-										<Narrow_Normal>(0.07,-0.05)</Narrow_Normal>
-										<Narrow_Wide>(0.07,-0.05)</Narrow_Wide>
-										<Narrow_Pointy>(0.07,-0.06)</Narrow_Pointy>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
-						<li>
-							<!-- Female Left Eye -->
-							<path>Parts/None/None</path>
-							<bodyPart>left eye</bodyPart>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.27</layerOffset>
-							<drawForMale>false</drawForMale>
-							<hediffGraphics>
-								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
-								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Left</PMI_CompoundEye>
-							</hediffGraphics>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Male>(-0.42,0.56)</Male>
-										<Female>(-0.42,0.56)</Female>
-										<Thin>(-0.42,0.56)</Thin>
-										<Hulk>(-0.42,0.56)</Hulk>
-										<Fat>(-0.42,0.56)</Fat>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Pointy>(-0.01,0)</Average_Pointy>
-										<Narrow_Normal>(0,0.02)</Narrow_Normal>
-										<Narrow_Wide>(-0.02,0.02)</Narrow_Wide>
-										<Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
-									</crownTypes>
-								</south>
-								<north />
-								<east>
-									<bodyTypes>
-										<Male>(-0.46,0.56)</Male>
-										<Female>(-0.52,0.56)</Female>
-										<Thin>(-0.51,0.56)</Thin>
-										<Hulk>(-0.52,0.56)</Hulk>
-										<Fat>(-0.51,0.56)</Fat>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.03,0.01)</Average_Normal>
-										<Average_Wide>(0.03,0.01)</Average_Wide>
-										<Average_Pointy>(0.035,0.01)</Average_Pointy>
-										<Narrow_Normal>(0.07,-0.02)</Narrow_Normal>
-										<Narrow_Wide>(0.07,-0.02)</Narrow_Wide>
-										<Narrow_Pointy>(0.07,-0.05)</Narrow_Pointy>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
-						<li>
-							<!-- Female Right Eye -->
-							<path>Parts/None/None</path>
-							<bodyPart>right eye</bodyPart>
-							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.27</layerOffset>
-							<drawForMale>false</drawForMale>
-							<hediffGraphics>
-								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
-								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Right</PMI_CompoundEye>
-							</hediffGraphics>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Male>(-0.42,0.56)</Male>
-										<Female>(-0.42,0.56)</Female>
-										<Thin>(-0.42,0.56)</Thin>
-										<Hulk>(-0.42,0.56)</Hulk>
-										<Fat>(-0.42,0.56)</Fat>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Pointy>(-0.01,0)</Average_Pointy>
-										<Narrow_Normal>(0,0.02)</Narrow_Normal>
-										<Narrow_Wide>(-0.02,0.02)</Narrow_Wide>
-										<Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
-									</crownTypes>
-								</south>
-								<north />
-								<east>
-									<bodyTypes>
-										<Male>(-0.46,0.56)</Male>
-										<Female>(-0.52,0.56)</Female>
-										<Thin>(-0.51,0.56)</Thin>
-										<Hulk>(-0.52,0.56)</Hulk>
-										<Fat>(-0.51,0.56)</Fat>
-									</bodyTypes>
-									<crownTypes>
-										<Average_Normal>(0.03,0.01)</Average_Normal>
-										<Average_Wide>(0.03,0.01)</Average_Wide>
-										<Average_Pointy>(0.035,0.01)</Average_Pointy>
-										<Narrow_Normal>(0.07,-0.02)</Narrow_Normal>
-										<Narrow_Wide>(0.07,-0.02)</Narrow_Wide>
-										<Narrow_Pointy>(0.07,-0.05)</Narrow_Pointy>
-									</crownTypes>
 								</east>
 							</offsets>
 						</li>
