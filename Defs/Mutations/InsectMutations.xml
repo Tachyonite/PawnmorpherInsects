@@ -138,6 +138,11 @@
 				</capMods>
 			</li>
 		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_InsectMandibles</defName>
