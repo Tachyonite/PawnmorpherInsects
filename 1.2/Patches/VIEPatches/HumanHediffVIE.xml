@@ -1,0 +1,121 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Jaw"]/hediffGraphics</xpath>
+					<value>
+						<VFEI_Mandibles>Parts/Insect/Insect_Jaw</VFEI_Mandibles>
+						<PMI_InsectMandibles>Parts/Insect/Insect_Jaw</PMI_InsectMandibles>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear" and inFrontOfBody="true"]/hediffGraphics</xpath>
+					<value>
+						<VFEI_Antenna>Parts/Insect/Insect_Antenna_Left</VFEI_Antenna>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear" and inFrontOfBody="false"]/hediffGraphics</xpath>
+					<value>
+						<VFEI_Antenna>Parts/Insect/Insect_Antenna_Left_Behind</VFEI_Antenna>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear" and inFrontOfBody="true"]/hediffGraphics</xpath>
+					<value>
+						<VFEI_Antenna>Parts/Insect/Insect_Antenna_Right</VFEI_Antenna>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear" and inFrontOfBody="false"]/hediffGraphics</xpath>
+					<value>
+						<VFEI_Antenna>Parts/Insect/Insect_Antenna_Right_Behind</VFEI_Antenna>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[(bodyPart="tail" or bodyPart="Tail") and not(layerOffset="-0.29")]/hediffGraphics</xpath>
+					<value>
+						<PMI_Spinnerets>Parts/spiderweaver/spiderweaver_butt</PMI_Spinnerets>
+						<PMI_InsectAbdomen>Parts/Insect/Insect_Abdomen</PMI_InsectAbdomen>
+						<PMI_ScorpionTail>Parts/gigascorpion/gigascorpion_tail</PMI_ScorpionTail>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+					<value>
+						<li>
+							<!-- Left Eye -->
+							<path>Parts/None/None</path>
+							<bodyPart>left eye</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.27</layerOffset>
+							<shaderType>CutoutSkin</shaderType>
+							<hediffGraphics>
+								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
+								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Left</PMI_CompoundEye>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.42,0.56)</Male>
+										<Female>(-0.42,0.56)</Female>
+										<Thin>(-0.42,0.56)</Thin>
+										<Hulk>(-0.42,0.56)</Hulk>
+										<Fat>(-0.42,0.56)</Fat>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+									<bodyTypes>
+										<Male>(-0.46,0.56)</Male>
+										<Female>(-0.52,0.56)</Female>
+										<Thin>(-0.51,0.56)</Thin>
+										<Hulk>(-0.52,0.56)</Hulk>
+										<Fat>(-0.51,0.56)</Fat>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<!-- Right Eye -->
+							<path>Parts/None/None</path>
+							<bodyPart>right eye</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerOffset>-0.27</layerOffset>
+							<shaderType>CutoutSkin</shaderType>
+							<hediffGraphics>
+								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
+								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Right</PMI_CompoundEye>
+							</hediffGraphics>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.42,0.56)</Male>
+										<Female>(-0.42,0.56)</Female>
+										<Thin>(-0.42,0.56)</Thin>
+										<Hulk>(-0.42,0.56)</Hulk>
+										<Fat>(-0.42,0.56)</Fat>
+									</bodyTypes>
+								</south>
+								<north/>
+								<east>
+									<bodyTypes>
+										<Male>(-0.46,0.56)</Male>
+										<Female>(-0.52,0.56)</Female>
+										<Thin>(-0.51,0.56)</Thin>
+										<Hulk>(-0.52,0.56)</Hulk>
+										<Fat>(-0.51,0.56)</Fat>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
