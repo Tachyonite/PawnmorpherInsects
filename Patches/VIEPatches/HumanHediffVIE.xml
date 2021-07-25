@@ -51,6 +51,7 @@
 							<!-- Left Eye -->
 							<path>Parts/None/None</path>
 							<bodyPart>left eye</bodyPart>
+							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
 							<shaderType>CutoutSkin</shaderType>
@@ -58,32 +59,12 @@
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
 								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Left</PMI_CompoundEye>
 							</hediffGraphics>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Male>(-0.42,0.56)</Male>
-										<Female>(-0.42,0.56)</Female>
-										<Thin>(-0.42,0.56)</Thin>
-										<Hulk>(-0.42,0.56)</Hulk>
-										<Fat>(-0.42,0.56)</Fat>
-									</bodyTypes>
-								</south>
-								<north/>
-								<east>
-									<bodyTypes>
-										<Male>(-0.46,0.56)</Male>
-										<Female>(-0.52,0.56)</Female>
-										<Thin>(-0.51,0.56)</Thin>
-										<Hulk>(-0.52,0.56)</Hulk>
-										<Fat>(-0.51,0.56)</Fat>
-									</bodyTypes>
-								</east>
-							</offsets>
 						</li>
 						<li>
 							<!-- Right Eye -->
 							<path>Parts/None/None</path>
 							<bodyPart>right eye</bodyPart>
+							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerOffset>-0.27</layerOffset>
 							<shaderType>CutoutSkin</shaderType>
@@ -91,27 +72,6 @@
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
 								<PMI_CompoundEye>Parts/Insect/Insect_Eye_Right</PMI_CompoundEye>
 							</hediffGraphics>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<Male>(-0.42,0.56)</Male>
-										<Female>(-0.42,0.56)</Female>
-										<Thin>(-0.42,0.56)</Thin>
-										<Hulk>(-0.42,0.56)</Hulk>
-										<Fat>(-0.42,0.56)</Fat>
-									</bodyTypes>
-								</south>
-								<north/>
-								<east>
-									<bodyTypes>
-										<Male>(-0.46,0.56)</Male>
-										<Female>(-0.52,0.56)</Female>
-										<Thin>(-0.51,0.56)</Thin>
-										<Hulk>(-0.52,0.56)</Hulk>
-										<Fat>(-0.51,0.56)</Fat>
-									</bodyTypes>
-								</east>
-							</offsets>
 						</li>
 					</value>
 				</li>
