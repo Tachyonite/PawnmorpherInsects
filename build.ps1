@@ -53,7 +53,7 @@ if(!$?)
     exit 1 
 }
 
-Copy-Item -Path Defs, "1.2", "1.3", About, Assemblies, Languages, Patches, Source, Textures -Destination "$buildDir/Tmp" -Recurse
+Copy-Item -Path Defs, "1.2", "1.3", "LoadFolders.xml", About, Assemblies, Languages, Patches, Source, Textures -Destination "$buildDir/Tmp" -Recurse
 
 
 #check for .vs folders and get rid of them 
