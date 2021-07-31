@@ -53,7 +53,6 @@
 							<bodyPart>left eye</bodyPart>
 							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.27</layerOffset>
 							<shaderType>CutoutSkin</shaderType>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Left</VFEI_CompoundEye>
@@ -66,7 +65,6 @@
 							<bodyPart>right eye</bodyPart>
 							<alignWithHead>true</alignWithHead>
 							<inFrontOfBody>true</inFrontOfBody>
-							<layerOffset>-0.27</layerOffset>
 							<shaderType>CutoutSkin</shaderType>
 							<hediffGraphics>
 								<VFEI_CompoundEye>Parts/Insect/Insect_Eye_Right</VFEI_CompoundEye>
