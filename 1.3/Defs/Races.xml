@@ -79,7 +79,7 @@
 			<mateMtbHours>99999999</mateMtbHours>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
-			<lifeStageAges>
+			<lifeStageAges Inherit="false">
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -114,7 +114,7 @@
 			<min>1</min>
 			<max>2</max>
 		</wildGroupSize>
-		<lifeStages>
+		<lifeStages Inherit="False">
 			<li>
 				<!-- update life stages -->
 				<label>calf</label>
