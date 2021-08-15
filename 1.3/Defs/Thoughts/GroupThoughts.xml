@@ -1,0 +1,160 @@
+<Defs>
+    <ThoughtDef ParentName="GroupThoughtBase" Class="Pawnmorph.Thoughts.Def_AspectThought">
+        <defName>PMI_HiveMindedThought</defName>
+        <aspect>PMI_HiveMinded</aspect>
+        <stages>
+            <!-- should have the same number of stages as the aspect -->
+            <li>
+                <label>no hive</label>
+                <description>I feel totally isolated without any fellow hive members.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>small hive</label>
+                <description>There another insectmorph, but it's not enough to be a true hive.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>decent hive</label>
+                <description>There's enough fellow bugs to make up a decent hive, but we could do better.</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>swarming hive</label>
+                <description>The hive is swarming. We are truly prepared for anything!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="SleptThoughtBase">
+        <defName>PMI_HiveMindedBedroom</defName>
+        <stages>
+            <li>
+                <label>awful bedroom</label>
+                <description>It feels so wrong to sleep away from the rest of the hive, and the room I slept in was awful, too!</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+            <li>
+                <label>dull bedroom</label>
+                <description>It feels so wrong to sleep away from the rest of the hive, and the room I slept in was dull, too.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>mediocre bedroom</label>
+                <description>I was forced to sleep separated from the hive.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>decent bedroom</label>
+                <description>I was forced to sleep separated from the hive.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>slightly impressive bedroom</label>
+                <description>I had to sleep on my own in a slightly impressive bedroom. It doesn't make up for having to sleep away from the rest of the hive.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>impressive bedroom</label>
+                <description>I slept on my own in an impressive bedroom. As nice as it was, I'm still bothered by sleeping apart from the hive.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>very impressive bedroom</label>
+                <description>I slept alone in a very impressive bedroom. The hive would appreciate sleeping together in this room.</description>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>extremely impressive bedroom</label>
+                <description>I slept alone in an extremely impressive bedroom. It would be even better if we could turn this into a communal hive sleeping chamber.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>unbelievably impressive bedroom</label>
+                <description>I slept alone in an unbelievably impressive bedroom. This room would make an excellent sleeping chamber for the whole hive.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>wondrously impressive bedroom</label>
+                <description>I slept alone in a heavenly bedroom. If I focus on how wonderous the room is, it almost drowns out the voice telling me I should be sleeping with the rest of the hive.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="SleptThoughtBase">
+        <defName>PMI_HiveMindedBarrack</defName>
+
+        <stages>
+            <li>
+                <label>awful barrack</label>
+                <description>The hive sleeping chamber is awful.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>dull barrack</label>
+                <description>The hive sleeping chamber is dull.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>mediocre barrack</label>
+                <description>The hive rests together, as it should.</description>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>decent barrack</label>
+                <description>The hive rests together, as it should.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>slightly impressive barrack</label>
+                <description>The hive rests together in a slightly impressive sleeping chamber.  Strength through unity.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>impressive barrack</label>
+                <description>The hive sleeps in an impressive hive sleeping chamber. We built this together.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>very impressive barrack</label>
+                <description>The hive sleeps in an unbelievably impressive sleeping chamber. This is a measure of how much our colony grows.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>extremely impressive barrack</label>
+                <description>The hive sleeps in an extremely impressive sleeping chamber. The hive is beginning to thrive.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+            <li>
+                <label>unbelievably impressive barrack</label>
+                <description>The hive sleeps in an unbelievably impressive sleeping chamber. These are the marvals that the hive can accomplish together.</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+            <li>
+                <label>wondrously impressive barrack</label>
+                <description>The hive sleeps in a simply wondrous sleeping chamber. It's truly fit for a queen and her brood.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    
+    <ThoughtDef ParentName="SleptThoughtBase">
+        <defName>PMI_HiveMindedAscetic</defName>
+        
+        <stages>
+            <li>
+                <label>ascetic slept alone</label>
+                <description>I was forced to sleep separated from the hive.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>ascetic slept with hive</label>
+                <description>Strength through unity.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
