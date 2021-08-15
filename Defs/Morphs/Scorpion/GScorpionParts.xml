@@ -64,6 +64,48 @@
 
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_GigaScorpionClaws</defName>
+		<label>scorpion arm</label>
+		<classInfluence>PMI_GigaScorpionMorph</classInfluence>
+		<parts>
+			<li>Arm</li>
+		</parts>
+		<description>[PWAN_namdDef]'s arms have transformed into large segmented scorpion arms</description>
+		<stages>
+			<li>
+				<label>unfamiliar</label>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<SocialImpact>-0.10</SocialImpact>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<SocialImpact>-0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
+		<defName>PMI_GigaScorpionClaws_Hand</defName>
 		<label>scorpion claws</label>
 		<classInfluence>PMI_GigaScorpionMorph</classInfluence>
 		<parts>
