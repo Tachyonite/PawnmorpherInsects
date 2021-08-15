@@ -35,7 +35,6 @@
             <xs:enumeration value="Pet" />
             <xs:enumeration value="Combat" />
             <xs:enumeration value="Crafter" />
-            <xs:enumeration value="PMI_Worker" />
             <xs:enumeration value="Production" />
             <xs:enumeration value="Social" />
             <xs:enumeration value="Avian" />
@@ -47,6 +46,7 @@
             <xs:enumeration value="Powerful" />
             <xs:enumeration value="Rodent" />
             <xs:enumeration value="Reptile"/>
+            <xs:enumeration value="Combo" />
         </xs:restriction>
     </xs:simpleType>
 
@@ -54,7 +54,6 @@
         <xs:restriction base="xs:string">
             <xs:enumeration value="Canines" />
             <xs:enumeration value="HerbivoreHerding" />
-            <xs:enumeration value="PMI_HiveMinded" />
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="WorkTags">
@@ -101,7 +100,6 @@
             <xs:enumeration value="Camelid"/>
             <xs:enumeration value="Cervid"/>
             <xs:enumeration value="Suid"/>
-            <xs:enumeration value="Insect" />
             <xs:enumeration value="PawFooted"/>
             <xs:enumeration value="Bear"/>
             <xs:enumeration value="Hare"/>
@@ -168,6 +166,28 @@
             <xs:enumeration value="Wolf_Timber"/>
             <xs:enumeration value="Wolf_Arctic"/>
             <xs:enumeration value="YorkshireTerrier"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Gender">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None" />
+            <xs:enumeration value="Male" />
+            <xs:enumeration value="Female" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="PreceptImpact">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Low" />
+            <xs:enumeration value="Medium" />
+            <xs:enumeration value="High" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MemeCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Normal" />
+            <xs:enumeration value="Structure" />
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
