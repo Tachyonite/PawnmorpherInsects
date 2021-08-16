@@ -5,6 +5,9 @@
 		<classInfluence>PMI_GigaScorpionMorph</classInfluence>
 		<description>A segmented tail with a barb on the end, perfect for stabbing and poisoning those whom it punctures. Due to the origin, this part also includes a strong dose of mutagen.</description>
 		<mutationMemory>PMI_ScorpionTailMemory</mutationMemory>
+		<graphics>
+			<BodyExtendingTail>Parts/gigascorpion/gigascorpion_tail</BodyExtendingTail>
+		</graphics>
 		<parts>
 			<li>Tail</li>
 			<li>MorphTail</li>
@@ -75,7 +78,7 @@
 		<parts>
 			<li>Arm</li>
 		</parts>
-		<description>[PWAN_namdDef]'s arms have transformed into large segmented scorpion arms</description>
+		<description>[PAWN_nameDef]'s arms have transformed into large segmented scorpion arms</description>
 		<stages>
 			<li>
 				<label>unfamiliar</label>
