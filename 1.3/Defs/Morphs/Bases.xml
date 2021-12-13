@@ -1,0 +1,26 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Schemas/MorphDef.xsd">
+    <Pawnmorph.MorphDef Name="PMI_InsectMorphBase" Abstract="true">
+        <classification>Insect</classification>
+        <group>PMI_HiveMinded</group>
+        <transformSettings>
+            <transformationMemory>PMI_BaseInsectChangedThought</transformationMemory>
+            <revertedMemory>PMI_BaseInsectRevertedThought</revertedMemory>
+        </transformSettings>
+    </Pawnmorph.MorphDef>
+
+    <Pawnmorph.MorphDef Name="PMI_CombatInsectBase" ParentName="PMI_InsectMorphBase" Abstract="true">
+        <categories>
+            <li>Combat</li>
+        </categories>
+    </Pawnmorph.MorphDef>
+    <Pawnmorph.MorphDef Name="PMI_ProductionInsectBase" ParentName="PMI_InsectMorphBase" Abstract="true">
+        <categories>
+            <li>Production</li>
+        </categories>
+    </Pawnmorph.MorphDef>
+    <Pawnmorph.MorphDef Name="PMI_WorkerInsectBase" ParentName="PMI_InsectMorphBase" Abstract="true">
+        <categories>
+            <li>PMI_Worker</li>
+        </categories>
+    </Pawnmorph.MorphDef>
+</Defs>

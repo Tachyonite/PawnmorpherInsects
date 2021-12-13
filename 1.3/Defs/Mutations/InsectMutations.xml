@@ -1,4 +1,5 @@
 <Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	
 	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinPart" Name="PMI_ChitianMutation">
 		<defName>PMI_ChitinSkin</defName>
 		<label>chitinous skin</label>
@@ -56,6 +57,7 @@
 			</li>
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_InsectClaws</defName>
 		<label>chitinous claws</label>
@@ -110,6 +112,7 @@
 			</li>
 		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_InsectClawsFoot</defName>
 		<label>chitinous claws</label>
@@ -144,6 +147,7 @@
 			</li>
 		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_InsectMandibles</defName>
 		<label>insectoid mandibles</label>
@@ -208,6 +212,7 @@
 			</li>
 		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_InsectAbdomen</defName>
 		<label>insectoid abdomen</label>
@@ -230,6 +235,7 @@
 			</li>
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 	<Pawnmorph.Hediffs.MutationDef ParentName="PMI_InsectMutationBase">
 		<defName>PMI_CompoundEye</defName>
 		<label>compound eye</label>
@@ -255,4 +261,5 @@
 			</li>
 		</stages>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 </Defs>

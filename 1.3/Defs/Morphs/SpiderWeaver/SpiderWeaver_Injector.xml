@@ -1,14 +1,12 @@
-<Defs>
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocateion="../../../Schemas/ThoughtDef.xsd">
 	<ThingDef ParentName="PMI_WarriorInjector">
 		<defName>PMI_SpiderWeaverInjector</defName>
 		<label>mutasyringe, spider weaver</label>
 		<description>A mutagenic injector filled with mechanites and spider weaver DNA. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
 		<ingestible>
 			<outcomeDoers>
-				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediffRandom">
-					<hediffDefs>
-						<li>PMI_SpiderWeaverMorphTf</li>
-					</hediffDefs>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>PMI_SpiderWeaverMorphTf</hediffDef>
 					<severity>1.00</severity>
 				</li>
 			</outcomeDoers>
