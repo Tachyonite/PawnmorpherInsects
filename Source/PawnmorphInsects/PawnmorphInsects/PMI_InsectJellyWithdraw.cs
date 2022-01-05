@@ -25,7 +25,7 @@ namespace PawnmorphInsects
         {
             base.Tick();
             Need_Chemical need = this.Need;
-            if (need != null && need.CurCategory == DrugDesireCategory.Withdrawal)
+            if (firstTime && need != null && need.CurCategory == DrugDesireCategory.Withdrawal)
             {
 
                 Name colonistName = this.pawn.Name;
