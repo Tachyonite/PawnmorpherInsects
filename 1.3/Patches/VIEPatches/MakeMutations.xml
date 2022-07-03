@@ -3,8 +3,8 @@
         <operations>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_InsectoidLeg"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
+					<classInfluence>Invertebrates</classInfluence>
                     <parts>
                         <li>Leg</li>
                     </parts>
@@ -12,18 +12,18 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_InsectoidArm"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <parts>
+					<classInfluence>Invertebrates</classInfluence>
+					<parts>
                         <li>Arm</li>
                     </parts>
                 </value>
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_Antenna"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <mutationMemory>PMI_AntennaMemory</mutationMemory>
+					<classInfluence>Invertebrates</classInfluence>
+					<mutationMemory>PMI_AntennaMemory</mutationMemory>
                     <graphics>
                         <RightEarBehindHead>Parts/Insect/Insect_Antenna_Right_Behind</RightEarBehindHead>
                         <RightEar>Parts/Insect/Insect_Antenna_Right</RightEar>
@@ -37,9 +37,9 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_CompoundEye"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <mutationMemory>PMI_CompoundEyesMemory</mutationMemory>
+					<classInfluence>Invertebrates</classInfluence>
+					<mutationMemory>PMI_CompoundEyesMemory</mutationMemory>
                     <graphics>
                         <LeftEye>Parts/Insect/Insect_Eye_Left</LeftEye>
                         <RightEye>Parts/Insect/Insect_Eye_Right</RightEye>
@@ -51,9 +51,9 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_Mandibles"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <graphics>
+					<classInfluence>Invertebrates</classInfluence>
+					<graphics>
                         <BirdJawOrnament>Parts/Insect/Insect_Jaw</BirdJawOrnament>
                     </graphics>
                     <parts>
@@ -63,9 +63,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_JellySac"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <classInfluence>PMI_RoyalMaggotMorph</classInfluence>
+					<classInfluence>PMI_RoyalMaggotMorph</classInfluence>
                     <parts>
                         <li>Waist</li>
                     </parts>
@@ -74,18 +73,17 @@
 
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_PneumaticClaw"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <parts>
+					<classInfluence>Invertebrates</classInfluence>
+					<parts>
                         <li>Hand</li>
                     </parts>
                 </value>
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_VenomGland"]</xpath>
-                <parentName>PMI_InsectMutationBase</parentName>
                 <value>
-                    <classInfluence>PMI_GigaScorpionMorph</classInfluence>
+					<classInfluence>PMI_GigaScorpionMorph</classInfluence>
                     <parts>
                         <li>Neck</li>
                     </parts>

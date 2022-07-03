@@ -1,12 +1,3 @@
 <Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MutationDef.xsd">
 
-	<Pawnmorph.Hediffs.MutationDef Name ="ArachnidJawPart" ParentName="InvertebratesJawPart" Abstract="true">
-	</Pawnmorph.Hediffs.MutationDef>
-
-	<Pawnmorph.Hediffs.MutationDef Name ="ArachnidEarPart" ParentName="InvertebratesEarPart" Abstract="true">
-	</Pawnmorph.Hediffs.MutationDef>
-
-	<Pawnmorph.Hediffs.MutationDef Name ="ArachnidTailPart" ParentName="InvertebratesTailPart" Abstract="true">
-	</Pawnmorph.Hediffs.MutationDef>
-
 </Defs>
