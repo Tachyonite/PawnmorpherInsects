@@ -1,0 +1,43 @@
+<Defs>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+		<defName>PMI_BaseInsectChangedThought</defName>
+		<stages>
+			<li>
+				<label>morphed</label>
+				<description>I'm... a bug? everything is so alien now.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>morphed</label>
+				<description>Being a bug makes everything so new and exciting</description>
+				<baseMoodEffect>+3</baseMoodEffect>
+			</li>
+			<li>
+				<label>morphed</label>
+				<description>This is even worse then I thought...I turned into a bug!</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef ParentName="OutlookMemoryBase">
+		<defName>PMI_BaseInsectRevertedThought</defName>
+		<stages>
+			<li>
+				<label>reverted</label>
+				<description>Back to normal!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>reverted</label>
+				<description>I was just getting used to it too.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>reverted</label>
+				<description>Thank Randy, my bones are on the inside now, where they should be!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

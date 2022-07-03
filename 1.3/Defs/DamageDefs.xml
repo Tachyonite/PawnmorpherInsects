@@ -1,0 +1,22 @@
+<Defs>
+    <DamageDef>
+		<defName>PMI_MutagenicStingerDamage</defName>
+		<label>mutagenic stab</label>
+		<workerClass>Pawnmorph.Damage.Worker_MutagenicStab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stabbed to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<overkillPctToDestroyPart>0.7~1.5</overkillPctToDestroyPart>
+		<modExtensions>
+			<li Class="Pawnmorph.Damage.MutagenicDamageExtension">
+				<severityPerDamage>0.07</severityPerDamage>
+				<mutagenicBuildup>MutagenicBuildup_Weapon</mutagenicBuildup>
+				<reduceValue>0.35</reduceValue>
+			</li>
+		</modExtensions>
+	</DamageDef>
+</Defs>

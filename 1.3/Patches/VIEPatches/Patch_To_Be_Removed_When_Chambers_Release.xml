@@ -1,0 +1,24 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/BodyPartDef[defName="MorphTail"]</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<BodyPartDef>
+								<defName>MorphTail</defName>
+								<label>tail</label>
+								<conceptual>true</conceptual>
+							</BodyPartDef>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
