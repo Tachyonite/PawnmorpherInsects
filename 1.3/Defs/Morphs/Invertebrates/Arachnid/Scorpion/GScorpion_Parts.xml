@@ -1,27 +1,85 @@
 <Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MutationDef.xsd">
 	
-	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphPart">
+	<Pawnmorph.Hediffs.MutationDef Name="ScorpionTailPart" ParentName="AnimalTailPart">
 		<defName>PMI_ScorpionTail</defName>
 		<label>scorpion tail</label>
 		<classInfluence>PMI_GigaScorpionMorph</classInfluence>
-		<description>A segmented tail with a barb on the end, perfect for stabbing and poisoning those whom it punctures. Due to the origin, this part also includes a strong dose of mutagen.</description>
 		<mutationMemory>PMI_ScorpionTailMemory</mutationMemory>
 		<graphics>
 			<BodyExtendingTail>Parts/gigascorpion/gigascorpion_tail</BodyExtendingTail>
 		</graphics>
-		<parts>
-			<li>Tail</li>
-			<li>MorphTail</li>
-		</parts>
-		<stages>
-			<li>
-				<label>new</label>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>initial</stageKey>
+				<values>
+					<verbOverrides>
+						<li>
+							<label>venom-stinger</label>
+							<power>0</power>
+							<chanceFactor>0</chanceFactor>
+						</li>
+						<li>
+							<label>muta-stinger</label>
+							<power>0</power>
+							<chanceFactor>0</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
 			</li>
-			<li>
-				<label>adapted</label>
-				<minSeverity>1</minSeverity>
+			<li function="modify">
+				<stageKey>pressing</stageKey>
+				<values>
+					<verbOverrides>
+						<li>
+							<label>venom-stinger</label>
+							<power>0</power>
+							<chanceFactor>0</chanceFactor>
+						</li>
+						<li>
+							<label>muta-stinger</label>
+							<power>0</power>
+							<chanceFactor>0</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
 			</li>
-		</stages>
+			<li function="modify">
+				<stageKey>growing</stageKey>
+				<values>
+					<description>A segmented tail with a barb on the end, perfect for stabbing and poisoning those whom it punctures. Due to the origin, this part also includes a strong dose of mutagen.</description>
+					<verbOverrides>
+						<li>
+							<label>venom-stinger</label>
+							<power>12</power>
+							<chanceFactor>0.5</chanceFactor>
+						</li>
+						<li>
+							<label>muta-stinger</label>
+							<power>12</power>
+							<chanceFactor>0.5</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>grown</stageKey>
+				<values>
+					<description>A segmented tail with a barb on the end, perfect for stabbing and poisoning those whom it punctures. Due to the origin, this part also includes a strong dose of mutagen.</description>
+					<verbOverrides>
+						<li>
+							<label>venom-stinger</label>
+							<power>12</power>
+							<chanceFactor>1</chanceFactor>
+						</li>
+						<li>
+							<label>muta-stinger</label>
+							<power>12</power>
+							<chanceFactor>1</chanceFactor>
+						</li>
+					</verbOverrides>
+			</values>
+			</li>
+		</stagePatches>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -59,14 +117,10 @@
 					</li>
 				</tools>
 			</li>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.25</severityPerDay>
-			</li>
 		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
 
-
-	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphArmPart">
 		<defName>PMI_GigaScorpionClaws</defName>
 		<label>scorpion arm</label>
 		<classInfluence>PMI_GigaScorpionMorph</classInfluence>
@@ -76,79 +130,127 @@
 			<LeftArmBehind>Parts/gigascorpion/gigascorpion_claw_left</LeftArmBehind>
 			<RightArmBehind>Parts/gigascorpion/gigascorpion_claw_right</RightArmBehind>
 		</graphics>
-		<parts>
-			<li>Arm</li>
-		</parts>
-		<description>[PAWN_nameDef]'s arms have transformed into large segmented scorpion arms</description>
-		<stages>
-			<li>
-				<label>unfamiliar</label>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.2</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>readjusting</stageKey>
+				<values>
+					<description>[PAWN_nameDef]'s arms are tranforming into large segmented scorpion arms</description>
+				</values>
 			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<label>adapted</label>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.1</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
+			<li function="modify">
+				<stageKey>unfamiliar</stageKey>
+				<values>
+					<description>[PAWN_nameDef]'s arms are tranforming into large segmented scorpion arms</description>
+				</values>
 			</li>
-		</stages>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
+				<values>
+					<description>[PAWN_nameDef]'s arms have transformed into large segmented scorpion arms</description>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
+				<values>
+					<description>[PAWN_nameDef]'s arms have transformed into large segmented scorpion arms</description>
+				</values>
+			</li>
+		</stagePatches>
 		<comps>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.25</severityPerDay>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationDependency">
+				<mutationDependency>
+					<hediff>PMI_GigaScorpionClaws_Hand</hediff>
+					<mtbDays>3</mtbDays>
+					<chance>5</chance>
+					<partsToAffect>
+						<li>Hand</li>
+					</partsToAffect>
+					<countToAffect>2</countToAffect>
+					<!-- <memory></memory>
+					<tale></tale> -->
+				</mutationDependency>
 			</li>
 		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
 
-	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphHandPart">
 		<defName>PMI_GigaScorpionClaws_Hand</defName>
 		<label>scorpion claws</label>
 		<classInfluence>PMI_GigaScorpionMorph</classInfluence>
-		<parts>
-			<li>Hand</li>
-		</parts>
-		<description>These large claws can twitch faster than the human eye can see, and are nice and sharp, but a hand that looks like a big scorpion is a little offputting.</description>
-		<stages>
-			<li>
-				<label>unfamiliar</label>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.2</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>readjusting</stageKey>
+				<values>
+					<label>clawed</label>
+					<description>These large claws can twitch faster than the human eye can see, and are nice and sharp, but a hand that looks like a big scorpion is a little offputting.</description>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>0.5</chanceFactor>
+							<power>5</power>
+						</li>
+					</verbOverrides>
+				</values>
 			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<label>adapted</label>
-				<capMods>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.1</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
+			<li function="modify">
+				<stageKey>unfamiliar</stageKey>
+				<values>
+					<label>padded</label>
+					<description>These large claws can twitch faster than the human eye can see, and are nice and sharp, but a hand that looks like a big scorpion is a little offputting.</description>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>0.5</chanceFactor>
+							<power>5</power>
+						</li>
+					</verbOverrides>
+				</values>
 			</li>
-		</stages>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
+				<values>
+					<description>These large claws can twitch faster than the human eye can see, and are nice and sharp, but a hand that looks like a big scorpion is a little offputting.</description>
+					<capMods>
+						<li>
+							<capacity>Manipulation</capacity>
+							<offset>-0.3</offset>
+						</li>
+					</capMods>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>0.5</chanceFactor>
+							<power>10</power>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
+				<values>
+					<description>These large claws can twitch faster than the human eye can see, and are nice and sharp, but a hand that looks like a big scorpion is a little offputting.</description>
+					<capMods>
+						<li>
+							<capacity>Manipulation</capacity>
+							<offset>-0.2</offset>
+						</li>
+					</capMods>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>1</chanceFactor>
+							<power>10</power>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+		</stagePatches>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -164,9 +266,7 @@
 					</li>
 				</tools>
 			</li>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.25</severityPerDay>
-			</li>
 		</comps>
 	</Pawnmorph.Hediffs.MutationDef>
+	
 </Defs>

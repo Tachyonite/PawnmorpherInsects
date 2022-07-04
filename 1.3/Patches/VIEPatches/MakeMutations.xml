@@ -3,7 +3,8 @@
         <operations>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_InsectoidLeg"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>Invertebrates</classInfluence>
                     <parts>
                         <li>Leg</li>
@@ -12,7 +13,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_InsectoidArm"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>Invertebrates</classInfluence>
 					<parts>
                         <li>Arm</li>
@@ -21,7 +23,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_Antenna"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>Invertebrates</classInfluence>
 					<mutationMemory>PMI_AntennaMemory</mutationMemory>
                     <graphics>
@@ -37,7 +40,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_CompoundEye"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>Invertebrates</classInfluence>
 					<mutationMemory>PMI_CompoundEyesMemory</mutationMemory>
                     <graphics>
@@ -51,7 +55,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_Mandibles"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>Invertebrates</classInfluence>
 					<graphics>
                         <BirdJawOrnament>Parts/Insect/Insect_Jaw</BirdJawOrnament>
@@ -63,7 +68,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_JellySac"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>PMI_RoyalMaggotMorph</classInfluence>
                     <parts>
                         <li>Waist</li>
@@ -73,7 +79,8 @@
 
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_PneumaticClaw"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>Invertebrates</classInfluence>
 					<parts>
                         <li>Hand</li>
@@ -82,7 +89,8 @@
             </li>
             <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
                 <xpath>Defs/HediffDef[defName="VFEI_VenomGland"]</xpath>
-                <value>
+				<parentName>PawnmorphPart</parentName>
+				<value>
 					<classInfluence>PMI_GigaScorpionMorph</classInfluence>
                     <parts>
                         <li>Neck</li>
