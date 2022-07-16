@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: "Source\PawnmorphInsects\PawnmorphInsects.sln"
+      Solution_Name: "Source/PawnmorphInsects/PawnmorphInsects.sln"
       Name: PawnmorphInsects
       #Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
 
