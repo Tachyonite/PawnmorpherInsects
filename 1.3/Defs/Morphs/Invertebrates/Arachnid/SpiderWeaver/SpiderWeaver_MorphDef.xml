@@ -1,0 +1,14 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="ArachnidMorph">
+        <defName>PMI_SpiderweaverMorph</defName>
+        <race>VFEI_VatGrownSpiderweaver</race>
+        <label>spiderweaver morph</label>
+        <description>'Weavermorphs' tend to sit in their rooms, think about their life, and play chess -- all while they're spinning their own silk. It's not a pleasant process and we prefer to leave it up to the imagination.</description>
+		<injectorDef>PMI_SpiderWeaverInjector</injectorDef>
+        <categories>
+			<li>Production</li>
+		</categories>
+		<fullTransformation>PMI_SpiderWeaverMorphTf</fullTransformation>
+        <partialTransformation>PMI_SpiderWeaverMorphTfPartial</partialTransformation>
+    </Pawnmorph.MorphDef>
+</Defs>

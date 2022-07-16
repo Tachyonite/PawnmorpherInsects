@@ -1,0 +1,371 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MutationDef.xsd">
+
+	<Pawnmorph.Hediffs.MutationDef Name ="InvertebratesJawPart" ParentName="AnimalJawPart">
+		<defName>PMI_InsectMandibles</defName>
+		<label>insectoid mandibles</label>
+		<classInfluence>Invertebrates</classInfluence>
+		<graphics>
+			<BirdJawOrnament>Parts/Insect/Insect_Jaw</BirdJawOrnament>
+		</graphics>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>initial</stageKey>
+				<values>
+					<verbOverrides>
+						<li>
+							<label>chompers</label>
+							<power>0</power>
+							<chanceFactor>0</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>pressing</stageKey>
+				<values>
+					<verbOverrides>
+						<li>
+							<label>chompers</label>
+							<power>0</power>
+							<chanceFactor>0</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>growing</stageKey>
+				<values>
+					<verbOverrides>
+						<li>
+							<label>chompers</label>
+							<power>8</power>
+							<chanceFactor>0.5</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
+				<values>
+					<description>Big bug chompers. Helps bite stuff, do ant things like carry a big piece of a leaf along a stick, but not so great for conversation. Unless [PAWN_nameDef] communicates through biting.</description>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+					<verbOverrides>
+						<li>
+							<label>chompers</label>
+							<power>10</power>
+							<chanceFactor>0.5</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
+				<values>
+					<description>Big bug chompers! Helps bite stuff, do ant things like carry a big piece of a leaf along a stick, but not so great for conversation. Adapting to it has made speaking less frustrating.</description>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+					<verbOverrides>
+						<li>
+							<label>chompers</label>
+							<power>10</power>
+							<chanceFactor>1</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>paragon</stageKey>
+				<values>
+					<description>Big bug chompers! Helps bite stuff, do ant things like carry a big piece of a leaf along a stick. With further adaptation, [PAWN_nameDef] has learned to speak normally.</description>
+					<verbOverrides>
+						<li>
+							<label>chompers</label>
+							<power>12.5</power>
+							<chanceFactor>1</chanceFactor>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+		</stagePatches>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>1.5</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.7</chanceFactor>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef Name ="InvertebratesTailPart" ParentName="AnimalTailPart">
+		<defName>PMI_InsectAbdomen</defName>
+		<label>insectoid abdomen</label>
+		<classInfluence>Invertebrates</classInfluence>
+		<graphics>
+			<BodyExtendingTail>Parts/Insect/Insect_Abdomen</BodyExtendingTail>
+		</graphics>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>growing</stageKey>
+				<values>
+					<description>Normally this is full of an insect's guts, but [PAWN_nameDef] already has a torso full of guts, so either some of them moved in here or something fishy is going on.</description>
+					<capMods>
+						<li>
+							<capacity>Metabolism</capacity>
+							<offset>0.30</offset>
+						</li>
+					</capMods>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>grown</stageKey>
+				<values>
+					<description>Normally this is full of an insect's guts, but [PAWN_nameDef] already has a torso full of guts, so either some of them moved in here or something fishy is going on.</description>
+					<capMods>
+						<li>
+							<capacity>Metabolism</capacity>
+							<offset>0.30</offset>
+						</li>
+					</capMods>
+				</values>
+			</li>
+		</stagePatches>
+	</Pawnmorph.Hediffs.MutationDef>
+	
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphSkinBasePart" Name="PMI_ChitianMutation">
+		<defName>PMI_ChitinSkin</defName>
+		<label>chitinous skin</label>
+		<classInfluence>Invertebrates</classInfluence>
+		<mutationMemory>PMI_ChitainMemory</mutationMemory>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>light</stageKey>
+				<values>
+					<label>thick skin</label>
+					<description>The skin on this limb seems to be slightly more tough than the average human.</description>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>dusting</stageKey>
+				<values>
+					<label>stiffening skin</label>
+					<description>The skin here has started to stiffen and darken. Disturbing, but it does provide some measure of protection.</description>
+					<statOffsets>
+						<ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+					</statOffsets>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>thin</stageKey>
+				<values>
+					<label>hardened skin</label>
+					<description>The skin here has hardened further as tough fibers weave together beneath.</description>
+					<statOffsets>
+						<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					</statOffsets>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>patches</stageKey>
+				<values>
+					<label>thin chitin</label>
+					<description>The outer skin here has shed away, revealing a hard shell of chitin beneath.</description>
+					<statOffsets>
+						<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					</statOffsets>				
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>full</stageKey>
+				<values>
+					<label>carapace</label>
+					<description>Tough fibers have spread through this skin, weaving together into a hard shell.</description>
+					<statOffsets>
+						<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					</statOffsets>
+				</values>
+			</li>
+		</stagePatches>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphHandPart">
+		<classInfluence>Invertebrates</classInfluence>
+		<defName>PMI_InsectClaws</defName>
+		<label>chitinous claws</label>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>readjusting</stageKey>
+				<values>
+					<label>clawed</label>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>0.5</chanceFactor>
+							<power>6</power>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>unfamiliar</stageKey>
+				<values>
+					<label>padded</label>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>0.5</chanceFactor>
+							<power>6.2</power>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
+				<values>
+					<label>unfamiliar</label>
+					<capMods>
+						<li>
+							<capacity>Manipulation</capacity>
+							<offset>-0.1</offset>
+						</li>
+					</capMods>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>0.5</chanceFactor>
+							<power>7</power>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
+				<values>
+					<label>adapted</label>
+					<description>These dextrous claws can twitch faster than the human eye can see, and are nice and sharp, but a hand that looks like a big spider is a little offputting.</description>
+					<capMods>
+						<li>
+							<capacity>Manipulation</capacity>
+							<offset>0.2</offset>
+						</li>
+					</capMods>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+					<verbOverrides>
+						<li>
+							<label>claws</label>
+							<chanceFactor>1</chanceFactor>
+							<power>8</power>
+						</li>
+					</verbOverrides>
+				</values>
+			</li>
+		</stagePatches>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>claws</label>
+						<labelUsedInLogging>False</labelUsedInLogging>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>5</power>
+						<cooldownTime>2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphFootPart">
+		<defName>PMI_InsectClawsFoot</defName>
+		<label>chitinous claws</label>
+		<classInfluence>Invertebrates</classInfluence>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>readjusting</stageKey>
+				<values>
+					<label>clawed</label>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>unfamiliar</stageKey>
+				<values>
+					<label>padded</label>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
+				<values>
+					<capMods>
+						<li>
+							<capacity>Moving</capacity>
+							<offset>-0.05</offset>
+						</li>
+					</capMods>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
+				<values>
+					<description>Not quite the bee's knees, this is the bug's foot. Great for dancing the jitterbug, at least when they get used to it. The sharp claws wreak havoc on footwear, but give great traction for running.</description>
+					<capMods>
+						<li>
+							<capacity>Moving</capacity>
+							<offset>0.05</offset>
+						</li>
+					</capMods>
+				</values>
+			</li>
+		</stagePatches>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphGenericEyePart">
+		<defName>PMI_CompoundEye</defName>
+		<label>compound eye</label>
+		<classInfluence>Invertebrates</classInfluence>
+		<graphics>
+			<LeftEye>Parts/Insect/Insect_Eye_Left</LeftEye>
+			<RightEye>Parts/Insect/Insect_Eye_Right</RightEye>
+		</graphics>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
+				<values>
+					<description>Countless individual photoreceptors make up these eyes. They offer a vast, albeit overwhelming, field of view. Also great in staring contests.</description>
+					<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+				</values>
+			</li>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
+				<values>
+					<description>Countless individual photoreceptors make up these eyes. They offer a vast, albeit overwhelming, field of view. Also great in staring contests.</description>
+					<partEfficiencyOffset>0.1</partEfficiencyOffset>
+					<statOffsets>
+						<SocialImpact>-0.10</SocialImpact>
+					</statOffsets>
+				</values>
+			</li>
+		</stagePatches>
+	</Pawnmorph.Hediffs.MutationDef>
+
+</Defs>
