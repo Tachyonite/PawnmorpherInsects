@@ -147,8 +147,10 @@
   <ItemGroup>
     <Compile Include="InsectsInit.cs" />
     <Compile Include="PatchOperations\MakeMutation.cs" />
+    <Compile Include="PMI_AspectDefOf.cs" />
     <Compile Include="PMI_InsectJellyWithdraw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtWorker_InsectHive.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

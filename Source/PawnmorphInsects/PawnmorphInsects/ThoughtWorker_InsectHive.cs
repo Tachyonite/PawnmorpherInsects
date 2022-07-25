@@ -7,7 +7,7 @@ namespace PawnmorphInsects
 	/// <summary>
 	/// Worker for relational thoughts inside an insectmorph hive.
 	/// </summary>
-    class ThoughtWorker_InsectHive : ThoughtWorker
+    public class ThoughtWorker_InsectHive : ThoughtWorker
     {
 		/// <summary>
 		/// Tells if two pawns have an insect mind aspect.
