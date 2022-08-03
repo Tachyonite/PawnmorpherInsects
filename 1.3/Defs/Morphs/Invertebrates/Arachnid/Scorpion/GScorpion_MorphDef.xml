@@ -1,0 +1,13 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="ArachnidMorph">
+        <defName>PMI_GigaScorpionMorph</defName>
+        <label>gigascorpion morph</label>
+        <race>VFEI_VatGrownGigascorpion</race>
+		<injectorDef>PMI_GScorpionInjector</injectorDef>
+		<categories>
+			<li>Combat</li>
+		</categories>
+        <fullTransformation>PMI_ScorpionMorphTf</fullTransformation>
+        <partialTransformation>PMI_ScorpionMorphTfPartial</partialTransformation>
+    </Pawnmorph.MorphDef>
+</Defs>

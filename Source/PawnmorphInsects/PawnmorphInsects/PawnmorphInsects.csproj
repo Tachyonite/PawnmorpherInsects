@@ -147,12 +147,19 @@
   <ItemGroup>
     <Compile Include="InsectsInit.cs" />
     <Compile Include="PatchOperations\MakeMutation.cs" />
+    <Compile Include="PMI_AspectDefOf.cs" />
     <Compile Include="PMI_InsectJellyWithdraw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThoughtWorker_InsectHive.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.0.0.10</Version>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.3.3389</Version>
+    </PackageReference>
+    <PackageReference Include="UnlimitedHugs.Rimworld.HugsLib">
+      <Version>9.0.1</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />

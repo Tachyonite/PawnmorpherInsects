@@ -1,0 +1,8 @@
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/HediffDef[defName="VFEI_RoyalJellyAddiction"]/hediffClass</xpath>
+        <value>
+            <hediffClass>PawnmorphInsects.PMI_InsectJellyWithdraw</hediffClass>
+        </value>
+    </Operation>
+</Patch>

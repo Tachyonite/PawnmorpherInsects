@@ -12,8 +12,8 @@
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 		</statBases>
 		<comps>
-			<li Class="Pawnmorph.CompProperties_AlwaysFormerHuman">
-				<hediff>TransformedHuman</hediff>
+			<li Class="Pawnmorph.ThingComps.CompProperties_CanBeFormerHuman">
+				<always>true</always>
 			</li>
 		</comps>
 		<tools>

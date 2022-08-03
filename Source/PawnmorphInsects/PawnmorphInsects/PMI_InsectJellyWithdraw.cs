@@ -12,6 +12,9 @@ namespace PawnmorphInsects
 {
     public class PMI_InsectJellyWithdraw : Hediff_Addiction
     {
+        /// <summary>
+        /// False if the pawn has already been transformed once and then reverted.
+        /// </summary>
         bool firstTime = true;
 
         public override void ExposeData()
@@ -25,8 +28,15 @@ namespace PawnmorphInsects
         {
             base.Tick();
             Need_Chemical need = this.Need;
-            if (need != null && need.CurCategory == DrugDesireCategory.Withdrawal)
+            if (firstTime && need != null && need.CurCategory == DrugDesireCategory.Withdrawal)
             {
+                // Check every 30 ticks
+                if (pawn.IsHashIntervalTick(30) == false)
+                    return;
+
+                // If pawn is not available to be transformed.
+                if (MutagenDefOf.defaultMutagen.MutagenCached.CanTransform(pawn) == false)
+                    return;
 
                 Name colonistName = this.pawn.Name;
                 var tfRequest = new TransformationRequest(PawnKindDefOf.Megaspider, pawn);
@@ -35,9 +45,7 @@ namespace PawnmorphInsects
                 if (tfPawn == null)
                 {
                     Log.Error($"unable to transform pawn {colonistName}");
-                    firstTime = false;
                     return;
-
                 }
 
                 Find.World.GetComponent<PawnmorphGameComp>().AddTransformedPawn(tfPawn);
@@ -46,8 +54,8 @@ namespace PawnmorphInsects
 
                 string text = "TransformationLetter".Translate(colonistName).CapitalizeFirst();
                 Find.LetterStack.ReceiveLetter("TransformationLLabel".Translate(colonistName).CapitalizeFirst(), text, LetterDefOf.NegativeEvent, megaspider, null, null);
+                firstTime = false;
             }
-            this.firstTime = false;
         }
     }
 }

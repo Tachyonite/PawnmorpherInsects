@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>PartOfHive</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>PawnmorphInsects.ThoughtWorker_InsectHive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>part of hive</label>
+        <baseOpinionOffset>+40</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
