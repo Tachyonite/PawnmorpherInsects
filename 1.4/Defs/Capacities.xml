@@ -1,0 +1,19 @@
+<Defs>
+    <ToolCapacityDef>
+        <defName>PMI_MutagenicStingerStab</defName>
+    </ToolCapacityDef>
+    <ManeuverDef>
+        <defName>PMI_MutagenicStingerStab</defName>
+        <requiredCapacity>PMI_MutagenicStingerStab</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>PMI_MutagenicStingerDamage</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+</Defs>

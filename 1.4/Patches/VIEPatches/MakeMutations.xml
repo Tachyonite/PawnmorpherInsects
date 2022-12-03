@@ -1,0 +1,103 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_InsectoidLeg"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>Invertebrates</classInfluence>
+                    <parts>
+                        <li>Leg</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_InsectoidArm"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>Invertebrates</classInfluence>
+					<parts>
+                        <li>Arm</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_Antenna"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>Invertebrates</classInfluence>
+					<mutationMemory>PMI_AntennaMemory</mutationMemory>
+                    <graphics>
+                        <RightEarBehindHead>Parts/Insect/Insect_Antenna_Right_Behind</RightEarBehindHead>
+                        <RightEar>Parts/Insect/Insect_Antenna_Right</RightEar>
+                        <LeftEar>Parts/Insect/Insect_Antenna_Left</LeftEar>
+                        <LeftEarBehind>Parts/Insect/Insect_Antenna_Left_Behind</LeftEarBehind>
+                    </graphics>
+                    <parts>
+                        <li>Ear</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_CompoundEye"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>Invertebrates</classInfluence>
+					<mutationMemory>PMI_CompoundEyesMemory</mutationMemory>
+                    <graphics>
+                        <LeftEye>Parts/Insect/Insect_Eye_Left</LeftEye>
+                        <RightEye>Parts/Insect/Insect_Eye_Right</RightEye>
+                    </graphics>
+                    <parts>
+                        <li>Eye</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_Mandibles"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>Invertebrates</classInfluence>
+					<graphics>
+                        <BirdJawOrnament>Parts/Insect/Insect_Jaw</BirdJawOrnament>
+                    </graphics>
+                    <parts>
+                        <li>Jaw</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_JellySac"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>PMI_RoyalMaggotMorph</classInfluence>
+                    <parts>
+                        <li>Waist</li>
+                    </parts>
+                </value>
+            </li>
+
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_PneumaticClaw"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>Invertebrates</classInfluence>
+					<parts>
+                        <li>Hand</li>
+                    </parts>
+                </value>
+            </li>
+            <li Class="PawnmorphInsects.PatchOperations.MakeMutation">
+                <xpath>Defs/HediffDef[defName="VFEI_VenomGland"]</xpath>
+				<parentName>PawnmorphPart</parentName>
+				<value>
+					<classInfluence>PMI_GigaScorpionMorph</classInfluence>
+                    <parts>
+                        <li>Neck</li>
+                    </parts>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

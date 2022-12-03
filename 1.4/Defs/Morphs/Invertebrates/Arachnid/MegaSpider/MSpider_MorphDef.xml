@@ -1,0 +1,19 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="ArachnidMorph">
+        <defName>PMI_MegaSpiderMorph</defName>
+        <label>megaspider morph</label>
+        <description>Megaspiders are feared across known space, and the humanoid morphs of them are no exception. Combining the ferocity in combat of the megaspider with the relative intellect of a human, these morphs are often very dangerous.</description>
+        <race>Megaspider</race>
+		<injectorDef>PMI_MegaSpiderInjector</injectorDef>
+		<categories>
+			<li>Combat</li>
+		</categories>
+        <fullTransformation>PMI_MegaSpiderMorphTf</fullTransformation>
+        <partialTransformation>PMI_MegaSpiderMorphTfPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(154,125,94)</skinColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+    </Pawnmorph.MorphDef>
+</Defs>
