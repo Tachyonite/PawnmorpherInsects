@@ -1,0 +1,15 @@
+<Defs>
+    <ThingDef ParentName="GenusSerumBase">
+		<defName>PMI_BugMutaserym</defName>
+		<label>mutaserum, bug</label>
+		<description>A serum filled with mechanites and animal DNA that causes invertebrate mutations. Use with caution, as leaving the mechanites unchecked may transform the user.</description>
+		<ingestible>
+			<outcomeDoers>
+				<li Class="Pawnmorph.IngestionOutcomeDoer_AddMorphTf">
+					<animalClass>Invertebrates</animalClass>
+					<severity>1.00</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+</Defs>
