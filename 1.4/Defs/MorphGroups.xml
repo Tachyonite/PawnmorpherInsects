@@ -1,0 +1,11 @@
+<Defs>
+    <Pawnmorph.MorphGroupDef>
+		<defName>PMI_HiveMinded</defName>
+		<label>hive</label>
+		<aspectDef>PMI_HiveMinded</aspectDef>
+		<barrakThoughtReplacement>PMI_HiveMindedBarrack</barrakThoughtReplacement>
+		<bedroomThoughtReplacement>PMI_HiveMindedBedroom</bedroomThoughtReplacement>
+		<asceticRoomThought>PMI_HiveMindedAscetic</asceticRoomThought>
+	</Pawnmorph.MorphGroupDef>
+	
+</Defs>

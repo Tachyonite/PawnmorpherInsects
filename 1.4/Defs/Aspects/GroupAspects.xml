@@ -1,0 +1,24 @@
+<Defs>
+    <Pawnmorph.AspectDef ParentName="MorphGroupAspectBase">
+        <defName>PMI_HiveMinded</defName>
+        <label>hive minded</label>
+        <stages>
+            <li>
+                <modifier>alone</modifier>
+				<description>There are no other insectoids for this pawn to connect with.</description>
+            </li>
+            <li>
+                <modifier>lonely</modifier>
+				<description>There aren't quite enough insectoids for this pawn to be happy.</description>
+            </li>
+            <li>
+                <modifier>comfortable</modifier>
+				<description>The hive grows.</description>
+            </li>
+            <li>
+                <modifier>happy</modifier>
+				<description>The hive is swarming, thrumming, beating, alive.</description>
+            </li>
+        </stages>
+    </Pawnmorph.AspectDef>
+</Defs>
